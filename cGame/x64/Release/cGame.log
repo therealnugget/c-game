@@ -1,0 +1,23 @@
+﻿  Player.c
+  entityAdder.c
+  scene 1.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition (compiling source file Player.c)
+C:\Users\drago\source\repos\cGame\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,1): message : see previous definition of 'APIENTRY' (compiling source file Player.c)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition (compiling source file scene 1.c)
+C:\Users\drago\source\repos\cGame\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,1): message : see previous definition of 'APIENTRY' (compiling source file scene 1.c)
+C:\Users\drago\source\repos\cGame\cGame\math.h(59,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file entityAdder.c)
+C:\Users\drago\source\repos\cGame\cGame\entityAdder.c(15,1): warning C4005: 'Insert': macro redefinition
+C:\Users\drago\source\repos\cGame\cGame\EntityManager.h(64,1): message : see previous definition of 'Insert' (compiling source file entityAdder.c)
+C:\Users\drago\source\repos\cGame\cGame\entityAdder.c(26,12): warning C4098: 'InsertAtMainHead': 'void' function returning a value
+C:\Users\drago\source\repos\cGame\cGame\math.h(59,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file Player.c)
+C:\Users\drago\source\repos\cGame\cGame\math.h(59,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file scene 1.c)
+C:\Users\drago\source\repos\cGame\cGame\scene 1.c(123,2): warning C4047: 'function': 'uint *' differs in levels of indirection from 'uint **'
+C:\Users\drago\source\repos\cGame\cGame\scene 1.c(123,2): warning C4024: 'InitSingleTexture': different types for formal and actual parameter 4
+C:\Users\drago\source\repos\cGame\cGame\scene 1.c(187,40): warning C4018: '<': signed/unsigned mismatch
+x64\Release\entityAdder.obj : warning LNK4042: object specified more than once; extras ignored
+  Generating code
+  2 of 283 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    9 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  cGame.vcxproj -> C:\Users\drago\source\repos\cGame\x64\Release\cGame.exe

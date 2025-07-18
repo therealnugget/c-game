@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\entityAdder.h.obj",
+            "outputs": [
+                "x64\\Debug\\entityAdder.cod",
+                "C:\\Users\\drago\\source\\repos\\cGame - less comments\\cGame\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "C:\\Users\\drago\\source\\repos\\cGame - less comments\\cGame\\x64\\Debug\\entityAdder.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "entityAdder.h",
+                    "source-path": "c:\\users\\drago\\source\\repos\\cgame - less comments\\cgame\\entityadder.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

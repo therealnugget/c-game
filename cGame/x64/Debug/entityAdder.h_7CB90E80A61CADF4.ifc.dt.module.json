@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\entityAdder.obj",
+            "outputs": [
+                "x64\\Debug\\entityAdder.h_7CB90E80A61CADF4.ifc.dt.module.json",
+                "x64\\Debug\\entityAdder.h_7CB90E80A61CADF4.ifc.dt.d.json",
+                "x64\\Debug\\entityAdder.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "C:\\Users\\drago\\source\\repos\\cGame - less comments\\cGame\\entityAdder.h",
+                    "source-path": "c:\\users\\drago\\source\\repos\\cgame - less comments\\cgame\\entityadder.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

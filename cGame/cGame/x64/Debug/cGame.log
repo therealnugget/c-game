@@ -1,0 +1,21 @@
+﻿  hello world.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\OpenGL\glfw-3.3.8\include\GLFW\glfw3.h(123): message : see previous definition of 'APIENTRY'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winbase.h(9531,5): warning C5105: macro expansion producing 'defined' has undefined behavior
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(167,34): warning C4090: '=': different 'const' qualifiers
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(176,43): warning C4047: '=': 'HWND' differs in levels of indirection from 'int'
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(206,41): warning C4047: 'function': 'size_t' differs in levels of indirection from 'rsize_t *'
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(206,35): warning C4024: 'strnlen_s': different types for formal and actual parameter 2
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(212,65): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'rsize_t *'
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(212,59): warning C4024: 'strncpy_s': different types for formal and actual parameter 4
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(226,19): warning C4047: 'function': 'GLint' differs in levels of indirection from 'int *'
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(226,14): warning C4024: '__glewUniform4f': different types for formal and actual parameter 1
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(243,29): warning C4047: 'function': 'GLint' differs in levels of indirection from 'int *'
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(243,14): warning C4024: '__glewUniform1i': different types for formal and actual parameter 1
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(225,1): warning C4047: 'initializing': 'int *' differs in levels of indirection from 'GLint'
+C:\Users\nugget\source\repos\cGame\cGame\hello world.c(242,1): warning C4047: 'initializing': 'int *' differs in levels of indirection from 'GLint'
+  hello world.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+  Generating code
+  Finished generating code
+  cGame.vcxproj -> C:\Users\nugget\source\repos\cGame\x64\Debug\cGame.exe
