@@ -1,4 +1,4 @@
-﻿#include <gl/glew.h>
+#include <gl/glew.h>
 #include <GLFW/glfw3.h>
 #include "GL stuff.h"//4.6.13560 Compatibility Profile Context 26.20.11034.1006
 #include <stdio.h>
@@ -229,7 +229,7 @@ main
 		QueryPerformanceFrequency(&frequencyHolder);
 		frequency = frequencyHolder.QuadPart;
 		QueryPerformanceCounter(&pTime);
-		char* save = ReadSaveFile("saves/save 1.txt", SAVE_FILE_MAX_LINE_CHAR);
+		char* save = ReadSaveFile("saves/save_1.txt", SAVE_FILE_MAX_LINE_CHAR);
 		float deltaT = deltaTime();
 		printf("\nLoading save file took %f seconds.\n", deltaT);
 		free(save);
