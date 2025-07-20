@@ -6,5 +6,5 @@ A few interesting features about this project:
   .  every sprite in the scene is rendered as a quad; the project is limited in that quads cannot be rotated.
 -  64-bit layer-collision matrix
   .  collision events can be handled in behaviours independently of the physics system, which was a problem I realized unity had, which is that in unity, if you want a collider belonging to one layer to ignore a collider belonging to another in terms of physics responses, the two collider's collision event cannot be detected within a behaviour.
--  dictionaries were 
+-  dictionaries were created from scratch using a custom hash function, so that the most unique hashes can be outputted for the specific requirements of the project (i.e. whichever strings that I happen to need converted to hashes)
 WASD to move, space to attack. The executable for the game is located in "c-game/x64/Debug/cGame.exe".
