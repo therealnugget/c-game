@@ -8,7 +8,7 @@ __4C2AD0C7_winpackagefamily@h DB 01H
 __9DED9ED1_winapifamily@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__13490EC2_glew@h DB 01H
+__5B769280_glew@h DB 01H
 __F2638511_stdbool@h DB 01H
 __8C83BECC_concurrencysal@h DB 01H
 __608E3340_sal@h DB 01H
@@ -17,10 +17,10 @@ __1D1B619C_vcruntime@h DB 01H
 __735960E1_corecrt@h DB 01H
 __955456CD_stddef@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
+__0A1327A7_glfw3@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
+__7570C268_vectors@h DB 01H
 __12FEDF4E_sdkddkver@h DB 01H
 __9BAEE128_excpt@h DB 01H
 __B7B53233_stdarg@h DB 01H
@@ -175,14 +175,14 @@ __11B87C25_Windows@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
-__E0493894_main@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__565DCB0D_animations@h DB 01H
-__D929D131_Physics@h DB 01H
-__2EE0551D_mesh@h DB 01H
-__9CF8706E_collisions@h DB 01H
-__D1DC2946_EntityManager@h DB 01H
-__0B2AA9E6_collisions@c DB 01H
+__DD0D2CA2_main@h DB 01H
+__9378A798_Debug@h DB 01H
+__29DBA756_animations@h DB 01H
+__A6D01AF2_Physics@h DB 01H
+__13A4412B_mesh@h DB 01H
+__E37E1C35_collisions@h DB 01H
+__7CA6EAD6_EntityManager@h DB 01H
+__74ACC5BD_collisions@c DB 01H
 PUBLIC	SetColliderAABB
 pdata	SEGMENT
 $pdata$SetColliderAABB DD imagerel $LN24
@@ -192,11 +192,11 @@ xdata	SEGMENT
 $unwind$SetColliderAABB DD 021401H
 	DD	070109214H
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\collisions.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\collisions.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\collisions.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\collisions.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\collisions.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\collisions.c
 _TEXT	SEGMENT
 i$1 = 32
 size$2 = 36
@@ -223,7 +223,7 @@ $LN24:
   0000f	57		 push	 rdi
   00010	48 83 ec 50	 sub	 rsp, 80			; 00000050H
   00014	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0001b	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   00020	90		 npad	 1
 
@@ -292,7 +292,7 @@ $LN3@SetCollide:
 	00 00 00	 mulss	 xmm0, DWORD PTR __real@40000000
   000e4	f3 0f 11 44 24
 	24		 movss	 DWORD PTR size$2[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -344,7 +344,7 @@ $LN15@SetCollide:
   00179	0f 28 c1	 movaps	 xmm0, xmm1
   0017c	f3 0f 11 44 24
 	30		 movss	 DWORD PTR $T5[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\collisions.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\collisions.c
 
 ; 8    : 	checkGridScale3(collider);
 
@@ -373,7 +373,7 @@ $LN5@SetCollide:
 	00 00 00	 mulss	 xmm0, DWORD PTR __real@40000000
   001d2	f3 0f 11 44 24
 	28		 movss	 DWORD PTR size$3[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -425,7 +425,7 @@ $LN23@SetCollide:
   00267	0f 28 c1	 movaps	 xmm0, xmm1
   0026a	f3 0f 11 44 24
 	38		 movss	 DWORD PTR $T7[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\collisions.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\collisions.c
 
 ; 8    : 	checkGridScale3(collider);
 

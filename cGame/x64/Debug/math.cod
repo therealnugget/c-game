@@ -15,7 +15,7 @@ __4C2AD0C7_winpackagefamily@h DB 01H
 __9DED9ED1_winapifamily@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__13490EC2_glew@h DB 01H
+__5B769280_glew@h DB 01H
 __F2638511_stdbool@h DB 01H
 __8C83BECC_concurrencysal@h DB 01H
 __608E3340_sal@h DB 01H
@@ -24,10 +24,10 @@ __1D1B619C_vcruntime@h DB 01H
 __735960E1_corecrt@h DB 01H
 __955456CD_stddef@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
+__0A1327A7_glfw3@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
+__7570C268_vectors@h DB 01H
 __12FEDF4E_sdkddkver@h DB 01H
 __9BAEE128_excpt@h DB 01H
 __B7B53233_stdarg@h DB 01H
@@ -182,17 +182,17 @@ __11B87C25_Windows@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
-__E0493894_main@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__565DCB0D_animations@h DB 01H
-__D929D131_Physics@h DB 01H
-__294C502B_Mesh@h DB 01H
-__D1DC2946_EntityManager@h DB 01H
-__46B7CB64_math@h DB 01H
-__6969E086_Player@h DB 01H
-__1F46D782_scene 1@h DB 01H
-__EBE4262C_Dictionary@h DB 01H
-__D16512EC_math@c DB 01H
+__DD0D2CA2_main@h DB 01H
+__9378A798_Debug@h DB 01H
+__29DBA756_animations@h DB 01H
+__A6D01AF2_Physics@h DB 01H
+__1408441D_Mesh@h DB 01H
+__7CA6EAD6_EntityManager@h DB 01H
+__7BF3DF52_math@h DB 01H
+__FAAF98CA_Player@h DB 01H
+__60BF1C41_scene 1@h DB 01H
+__94624A77_Dictionary@h DB 01H
+__EC2106DA_math@c DB 01H
 nugEpsilon DD	03727c5acr			; 1e-05
 x_int_tolerance_y DD 03d8f5c29r			; 0.07
 upVector DD	000000000r			; 0
@@ -989,7 +989,7 @@ AABBsOverlap$rtcFrameData DD 01eH
 	DD	00H
 	DQ	FLAT:AABBsOverlap$rtcVarDesc
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 ;	COMDAT FAbs
 _TEXT	SEGMENT
 tv65 = 48
@@ -1004,7 +1004,7 @@ $LN5:
   00006	57		 push	 rdi
   00007	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   0000b	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__D1DC2946_EntityManager@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7CA6EAD6_EntityManager@h
   00012	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
@@ -1040,7 +1040,7 @@ $LN4@FAbs:
 FAbs	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT AddVectors
 _TEXT	SEGMENT
 _this$ = 40
@@ -1061,7 +1061,7 @@ $LN3:
   0001e	f3 ab		 rep stosd
   00020	48 8b 4c 24 50	 mov	 rcx, QWORD PTR [rsp+80]
   00025	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   0002c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 34   : 	Vector2 _this;
@@ -1101,7 +1101,7 @@ $LN3:
 AddVectors ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT TakeVectors
 _TEXT	SEGMENT
 _this$ = 40
@@ -1122,7 +1122,7 @@ $LN3:
   0001e	f3 ab		 rep stosd
   00020	48 8b 4c 24 50	 mov	 rcx, QWORD PTR [rsp+80]
   00025	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   0002c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 40   : 	Vector2 _this;
@@ -1162,7 +1162,7 @@ $LN3:
 TakeVectors ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT AddVectorsAssign
 _TEXT	SEGMENT
 $T6 = 32
@@ -1188,7 +1188,7 @@ $LN5:
   00023	48 8b 8c 24 a0
 	00 00 00	 mov	 rcx, QWORD PTR [rsp+160]
   0002b	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00032	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 52   : 	*lhs = AddVectors(*lhs, rhs);
@@ -1244,7 +1244,7 @@ $LN5:
 AddVectorsAssign ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT TakeVectorsAssign
 _TEXT	SEGMENT
 $T6 = 32
@@ -1270,7 +1270,7 @@ $LN5:
   00023	48 8b 8c 24 a0
 	00 00 00	 mov	 rcx, QWORD PTR [rsp+160]
   0002b	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00032	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 55   : 	*lhs = TakeVectors(*lhs, rhs);
@@ -1326,7 +1326,7 @@ $LN5:
 TakeVectorsAssign ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT VectorByScalar
 _TEXT	SEGMENT
 _this$ = 40
@@ -1348,7 +1348,7 @@ $LN3:
   0001f	f3 ab		 rep stosd
   00021	48 8b 4c 24 50	 mov	 rcx, QWORD PTR [rsp+80]
   00026	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   0002d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 61   : 	Vector2 _this = { vector.x * scalar, vector.y * scalar };
@@ -1384,7 +1384,7 @@ $LN3:
 VectorByScalar ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT FromToVector
 _TEXT	SEGMENT
 _this$ = 40
@@ -1405,7 +1405,7 @@ $LN3:
   0001e	f3 ab		 rep stosd
   00020	48 8b 4c 24 50	 mov	 rcx, QWORD PTR [rsp+80]
   00025	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   0002c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 74   : 	Vector2 _this;
@@ -1445,7 +1445,7 @@ $LN3:
 FromToVector ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT VectorMult
 _TEXT	SEGMENT
 _this$ = 40
@@ -1466,7 +1466,7 @@ $LN3:
   0001e	f3 ab		 rep stosd
   00020	48 8b 4c 24 50	 mov	 rcx, QWORD PTR [rsp+80]
   00025	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   0002c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 106  : 	Vector2 _this;
@@ -1506,7 +1506,7 @@ $LN3:
 VectorMult ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT VectorMultAssign
 _TEXT	SEGMENT
 $T6 = 32
@@ -1532,7 +1532,7 @@ $LN5:
   00023	48 8b 8c 24 a0
 	00 00 00	 mov	 rcx, QWORD PTR [rsp+160]
   0002b	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00032	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 112  : 	*a = VectorMult(*a, b);
@@ -1588,7 +1588,7 @@ $LN5:
 VectorMultAssign ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT Magnitude
 _TEXT	SEGMENT
 vector$ = 64
@@ -1601,7 +1601,7 @@ $LN3:
   00005	57		 push	 rdi
   00006	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 122  : 	return sqrtf(vector.x * vector.x + vector.y * vector.y);
@@ -1625,7 +1625,7 @@ $LN3:
 Magnitude ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT VectorDivByScalar
 _TEXT	SEGMENT
 _this$ = 40
@@ -1647,7 +1647,7 @@ $LN3:
   0001f	f3 ab		 rep stosd
   00021	48 8b 4c 24 50	 mov	 rcx, QWORD PTR [rsp+80]
   00026	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   0002d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 128  : 	Vector2 _this;
@@ -1687,7 +1687,7 @@ $LN3:
 VectorDivByScalar ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT NormalizedVector
 _TEXT	SEGMENT
 magnitude$ = 32
@@ -1713,7 +1713,7 @@ $LN9:
   0001e	48 8b 8c 24 a0
 	00 00 00	 mov	 rcx, QWORD PTR [rsp+160]
   00026	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   0002d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 152  : 	float magnitude = Magnitude(vector);
@@ -1807,7 +1807,7 @@ $LN1@Normalized:
 NormalizedVector ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT NormalizeVector
 _TEXT	SEGMENT
 vector$ = 64
@@ -1820,7 +1820,7 @@ $LN10:
   00005	57		 push	 rdi
   00006	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 157  : 	*vector = NormalizedVector(*vector);
@@ -1839,7 +1839,7 @@ $LN10:
 NormalizeVector ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT DotProduct
 _TEXT	SEGMENT
 LHS$ = 64
@@ -1854,7 +1854,7 @@ $LN3:
   0000a	57		 push	 rdi
   0000b	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 165  : 	return LHS.x * RHS.x + LHS.y * RHS.y;
@@ -1877,7 +1877,7 @@ $LN3:
 DotProduct ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT NormalDot
 _TEXT	SEGMENT
 $T5 = 80
@@ -1902,7 +1902,7 @@ $LN23:
   00023	48 8b 8c 24 b0
 	00 00 00	 mov	 rcx, QWORD PTR [rsp+176]
   0002b	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00032	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 157  : 	*vector = NormalizedVector(*vector);
@@ -1968,7 +1968,7 @@ $LN23:
 NormalDot ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Physics.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Physics.h
 ;	COMDAT IsLayer
 _TEXT	SEGMENT
 tv72 = 32
@@ -1984,7 +1984,7 @@ $LN5:
   00008	57		 push	 rdi
   00009	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000d	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__D929D131_Physics@h
+	00 00		 lea	 rcx, OFFSET FLAT:__A6D01AF2_Physics@h
   00014	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 8    : 	return collisionMatrix[layer1] & collisionMatrix[layer2];
@@ -2017,7 +2017,7 @@ $LN4@IsLayer:
 IsLayer	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 ;	COMDAT FMax
 _TEXT	SEGMENT
 b$ = 48
@@ -2038,7 +2038,7 @@ $LN9:
   0000c	57		 push	 rdi
   0000d	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   00011	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__D1DC2946_EntityManager@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7CA6EAD6_EntityManager@h
   00018	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 22   : 	bool b = lhs >= rhs;
@@ -2100,7 +2100,7 @@ $LN8@FMax:
 FMax	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 ;	COMDAT FMin
 _TEXT	SEGMENT
 b$ = 48
@@ -2121,7 +2121,7 @@ $LN9:
   0000c	57		 push	 rdi
   0000d	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   00011	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__D1DC2946_EntityManager@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7CA6EAD6_EntityManager@h
   00018	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 26   : 	bool b = lhs <= rhs;
@@ -2183,7 +2183,7 @@ $LN8@FMin:
 FMin	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.h
 ;	COMDAT TakePlrDmg
 _TEXT	SEGMENT
 amount$ = 48
@@ -2199,7 +2199,7 @@ $LN13:
   0000a	57		 push	 rdi
   0000b	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__901F82D0_player@h
+	00 00		 lea	 rcx, OFFSET FLAT:__03D9FA9C_player@h
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 19   : 	if (playerFullyImmune || plrImmune[type]) return;
@@ -2255,9 +2255,9 @@ $LN1@TakePlrDmg:
 TakePlrDmg ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 ;	COMDAT IsX
 _TEXT	SEGMENT
 $T1 = 32
@@ -2276,9 +2276,9 @@ $LN15:
   00005	57		 push	 rdi
   00006	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -2330,7 +2330,7 @@ $LN14@IsX:
   000a1	0f 28 c1	 movaps	 xmm0, xmm1
   000a4	f3 0f 11 44 24
 	24		 movss	 DWORD PTR $T2[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 30   : 	return FAbs(v.x) > FAbs(v.y);
 
@@ -2366,29 +2366,29 @@ $LN6@IsX:
 IsX	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Physics.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Physics.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 _TEXT	SEGMENT
 minMoreMinX$ = 32
 maxMoreMinX$ = 33
@@ -2534,7 +2534,7 @@ $LN243:
   00035	48 89 84 24 a0
 	05 00 00	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   0003d	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00044	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 36   : 	bool minMoreMinX = false, maxMoreMinX = false, minLessMaxX = false, maxLessMaxX = false, minMoreMinY = false, maxMoreMinY = false, minLessMaxY = false, maxLessMaxY = false;
@@ -2900,7 +2900,7 @@ $LN58@AABBsOverl:
 	05 00 00	 mov	 rax, QWORD PTR other$[rsp]
   004b2	48 8b 00	 mov	 rax, QWORD PTR [rax]
   004b5	48 89 44 24 50	 mov	 QWORD PTR othData$35[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Physics.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Physics.h
 
 ; 8    : 	return collisionMatrix[layer1] & collisionMatrix[layer2];
 
@@ -2932,7 +2932,7 @@ $LN112@AABBsOverl:
 	05 00 00	 movzx	 eax, BYTE PTR tv763[rsp]
   0050e	88 84 24 18 01
 	00 00		 mov	 BYTE PTR $T59[rsp], al
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 42   : 		if (!IsLayer(collider->layer, other->layer) || !colData || !othData || colData->bIsTrigger || othData->bIsTrigger) {
 
@@ -3048,7 +3048,7 @@ $LN62@AABBsOverl:
   00633	48 8b 40 14	 mov	 rax, QWORD PTR [rax+20]
   00637	48 89 84 24 88
 	04 00 00	 mov	 QWORD PTR from$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 75   : 	_this.x = to.x - from.x;
 
@@ -3074,7 +3074,7 @@ $LN62@AABBsOverl:
 	04 00 00	 mov	 rax, QWORD PTR _this$78[rsp]
   0067d	48 89 84 24 20
 	01 00 00	 mov	 QWORD PTR $T60[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 50   : 		const Vector2 fromTo = FromToVector(collider->midPoint, other->midPoint);
 
@@ -3165,7 +3165,7 @@ $LN70@AABBsOverl:
   00769	48 8b 40 48	 mov	 rax, QWORD PTR [rax+72]
   0076d	48 89 84 24 28
 	04 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 41   : 	_this.x = lhs.x - rhs.x;
 
@@ -3191,7 +3191,7 @@ $LN70@AABBsOverl:
 	04 00 00	 mov	 rax, QWORD PTR _this$77[rsp]
   007b3	48 89 84 24 30
 	01 00 00	 mov	 QWORD PTR $T61[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 54   : 		const Vector2 relativeVel = TakeVectors(othData->velocity, colData->velocity);
 
@@ -3318,7 +3318,7 @@ $LN74@AABBsOverl:
   00966	e8 00 00 00 00	 call	 NormalizedVector
   0096b	48 89 84 24 10
 	01 00 00	 mov	 QWORD PTR $T58[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -3348,7 +3348,7 @@ $LN141@AABBsOverl:
   009c3	0f 28 c1	 movaps	 xmm0, xmm1
   009c6	f3 0f 11 84 24
 	48 01 00 00	 movss	 DWORD PTR $T62[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 55   : 		const bool intX = (CheckIntX(collider, other) && CheckIntY(collider, other) || CheckIntX(other, collider) && CheckIntY(other, collider) || FAbs(NormalizedVector(fromTo).x) >= .6f);
 
@@ -3659,7 +3659,7 @@ $LN100@AABBsOverl:
   00d65	48 8b 44 24 38	 mov	 rax, QWORD PTR normal$[rsp]
   00d6a	48 89 84 24 a8
 	03 00 00	 mov	 QWORD PTR LHS$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 157  : 	*vector = NormalizedVector(*vector);
 
@@ -3705,7 +3705,7 @@ $LN100@AABBsOverl:
 	78 01 00 00	 movss	 xmm0, DWORD PTR $T63[rsp]
   00df6	f3 0f 11 84 24
 	7c 01 00 00	 movss	 DWORD PTR $T64[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 61   : 		float dot = NormalDot(normal, relativeVel);
 
@@ -3743,7 +3743,7 @@ $LN100@AABBsOverl:
   00e71	48 8b 44 24 38	 mov	 rax, QWORD PTR normal$[rsp]
   00e76	48 89 84 24 68
 	03 00 00	 mov	 QWORD PTR vector$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 61   : 	Vector2 _this = { vector.x * scalar, vector.y * scalar };
 
@@ -3766,7 +3766,7 @@ $LN100@AABBsOverl:
 	03 00 00	 mov	 rax, QWORD PTR _this$76[rsp]
   00ebc	48 89 84 24 80
 	01 00 00	 mov	 QWORD PTR $T65[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 72   : 		Vector2 jn = VectorByScalar(normal, (-1.0f - e) * dot / (colData->invMass + othData->invMass));
 
@@ -3774,7 +3774,7 @@ $LN100@AABBsOverl:
 	01 00 00	 mov	 rax, QWORD PTR $T65[rsp]
   00ecc	48 89 84 24 d8
 	00 00 00	 mov	 QWORD PTR jn$50[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 112  : 	*a = VectorMult(*a, b);
 
@@ -3818,7 +3818,7 @@ $LN100@AABBsOverl:
 	01 00 00	 mov	 rax, QWORD PTR $T66[rsp]
   00f42	48 89 84 24 d8
 	00 00 00	 mov	 QWORD PTR jn$50[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 74   : 		if (dot > .0f) {
 
@@ -3835,7 +3835,7 @@ $LN100@AABBsOverl:
 	00 00 00	 mov	 rax, QWORD PTR jn$50[rsp]
   00f68	48 89 84 24 c8
 	02 00 00	 mov	 QWORD PTR vector$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 61   : 	Vector2 _this = { vector.x * scalar, vector.y * scalar };
 
@@ -3858,7 +3858,7 @@ $LN100@AABBsOverl:
 	02 00 00	 mov	 rax, QWORD PTR _this$74[rsp]
   00fa8	48 89 84 24 90
 	01 00 00	 mov	 QWORD PTR $T67[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 75   : 			TakeVectorsAssign(&colData->velocity, VectorByScalar(jn, colNotStatic));
 
@@ -3868,7 +3868,7 @@ $LN100@AABBsOverl:
 	02 00 00	 mov	 QWORD PTR lhs$[rsp], rax
   00fc1	48 8b 84 24 90
 	01 00 00	 mov	 rax, QWORD PTR $T67[rsp]
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 55   : 	*lhs = TakeVectors(*lhs, rhs);
 
@@ -3912,7 +3912,7 @@ $LN100@AABBsOverl:
   01032	48 8b 8c 24 58
 	02 00 00	 mov	 rcx, QWORD PTR lhs$[rsp]
   0103a	48 89 01	 mov	 QWORD PTR [rcx], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 76   : 			AddVectorsAssign(&othData->velocity, VectorByScalar(jn, otherNotStatic));
 
@@ -3920,7 +3920,7 @@ $LN100@AABBsOverl:
 	00 00 00	 mov	 rax, QWORD PTR jn$50[rsp]
   01045	48 89 84 24 28
 	02 00 00	 mov	 QWORD PTR vector$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 61   : 	Vector2 _this = { vector.x * scalar, vector.y * scalar };
 
@@ -3943,7 +3943,7 @@ $LN100@AABBsOverl:
 	02 00 00	 mov	 rax, QWORD PTR _this$72[rsp]
   01085	48 89 84 24 a0
 	01 00 00	 mov	 QWORD PTR $T69[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 76   : 			AddVectorsAssign(&othData->velocity, VectorByScalar(jn, otherNotStatic));
 
@@ -3953,7 +3953,7 @@ $LN100@AABBsOverl:
 	01 00 00	 mov	 QWORD PTR lhs$[rsp], rax
   0109e	48 8b 84 24 a0
 	01 00 00	 mov	 rax, QWORD PTR $T69[rsp]
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 52   : 	*lhs = AddVectors(*lhs, rhs);
 
@@ -3998,7 +3998,7 @@ $LN100@AABBsOverl:
 	01 00 00	 mov	 rcx, QWORD PTR lhs$[rsp]
   01117	48 89 01	 mov	 QWORD PTR [rcx], rax
 $LN5@AABBsOverl:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c
 
 ; 78   : 		if (normalIsX) {
 

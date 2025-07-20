@@ -100,7 +100,7 @@ __4C2AD0C7_winpackagefamily@h DB 01H
 __9DED9ED1_winapifamily@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__13490EC2_glew@h DB 01H
+__5B769280_glew@h DB 01H
 __8C83BECC_concurrencysal@h DB 01H
 __608E3340_sal@h DB 01H
 __FB67E29A_vadefs@h DB 01H
@@ -108,8 +108,8 @@ __1D1B619C_vcruntime@h DB 01H
 __735960E1_corecrt@h DB 01H
 __955456CD_stddef@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
-__ADED8163_GL stuff@h DB 01H
+__0A1327A7_glfw3@h DB 01H
+__AFFFEBA2_GL stuff@h DB 01H
 __12FEDF4E_sdkddkver@h DB 01H
 __9BAEE128_excpt@h DB 01H
 __B7B53233_stdarg@h DB 01H
@@ -264,21 +264,21 @@ __11B87C25_Windows@h DB 01H
 __F2638511_stdbool@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
+__7570C268_vectors@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
-__E0493894_main@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__565DCB0D_animations@h DB 01H
-__D929D131_Physics@h DB 01H
-__294C502B_Mesh@h DB 01H
-__D1DC2946_EntityManager@h DB 01H
-__6969E086_Player@h DB 01H
-__863E315E_entityAdder@h DB 01H
-__46B7CB64_math@h DB 01H
-__1F46D782_scene 1@h DB 01H
-__FEBB390E_Player@c DB 01H
+__DD0D2CA2_main@h DB 01H
+__9378A798_Debug@h DB 01H
+__29DBA756_animations@h DB 01H
+__A6D01AF2_Physics@h DB 01H
+__1408441D_Mesh@h DB 01H
+__7CA6EAD6_EntityManager@h DB 01H
+__FAAF98CA_Player@h DB 01H
+__7AF83F4E_entityAdder@h DB 01H
+__7BF3DF52_math@h DB 01H
+__60BF1C41_scene 1@h DB 01H
+__6D7D4142_Player@c DB 01H
 runSpdAddFact DD 040000000r			; 2
 	ORG $+4
 $S1	DD	00H
@@ -630,7 +630,7 @@ PlayerInit$rtcFrameData DD 06H
 	DD	00H
 	DQ	FLAT:PlayerInit$rtcVarDesc
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 _TEXT	SEGMENT
 paths$ = 40
 hb_Mesh$ = 120
@@ -660,7 +660,7 @@ $LN3:
   00024	48 89 84 24 28
 	01 00 00	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   0002c	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00033	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 82   : #ifdef DEBUG_PLR_POS
@@ -1271,33 +1271,33 @@ $LN3:
 PlayerInit ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 _TEXT	SEGMENT
 resultantVel$9 = 32
 resultantVel$10 = 36
@@ -1352,7 +1352,7 @@ $LN168:
   00013	b8 cc cc cc cc	 mov	 eax, -858993460		; ccccccccH
   00018	f3 ab		 rep stosd
   0001a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00021	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 219  : #ifdef DEBUG_KEYS
@@ -1496,7 +1496,7 @@ $LN30@PlayerUpda:
 	00 00 00 00 00
 	00		 mov	 DWORD PTR tv139[rsp], 0
 $LN31@PlayerUpda:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -1526,7 +1526,7 @@ $LN56@PlayerUpda:
   001ee	0f 28 c1	 movaps	 xmm0, xmm1
   001f1	f3 0f 11 44 24
 	28		 movss	 DWORD PTR $T11[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 237  : 		AddForceScaleLimitVelX(*playerData, playerData->transform, avgDT * playerAccel * scaleX, scaleX, playerSpeed);
 
@@ -1852,7 +1852,7 @@ $LN11@PlayerUpda:
 	00 00		 mov	 rax, QWORD PTR plrAnim
   00530	48 89 84 24 58
 	01 00 00	 mov	 QWORD PTR animator$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 
 ; 30   : 	if (anim->animating == check) return;
 
@@ -1886,7 +1886,7 @@ $LN86@PlayerUpda:
   00574	48 8b 84 24 58
 	01 00 00	 mov	 rax, QWORD PTR animator$[rsp]
   0057c	c6 40 2c 01	 mov	 BYTE PTR [rax+44], 1
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 264  : 		if (!movingX) {
 
@@ -1895,7 +1895,7 @@ $LN86@PlayerUpda:
   00587	85 c0		 test	 eax, eax
   00589	0f 85 64 01 00
 	00		 jne	 $LN12@PlayerUpda
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 
 ; 343  : 	QueryPerformanceCounter(&cTime);
 
@@ -1924,7 +1924,7 @@ $LN86@PlayerUpda:
 	00 00 00	 mulss	 xmm0, DWORD PTR timeScale
   005d5	f3 0f 11 44 24
 	2c		 movss	 DWORD PTR $T12[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 265  : 			AddForceLimitVelX(*playerData, playerData->transform, attk1MoveAmnts[plrAnim->curAnimFrame] * deltaTime() * attack1MoveAmnt * playerData->transform.scale.x, playerSpeed);
 
@@ -1964,7 +1964,7 @@ $LN45@PlayerUpda:
 	00 00 00 00 00
 	00		 mov	 DWORD PTR tv256[rsp], 0
 $LN46@PlayerUpda:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -1994,7 +1994,7 @@ $LN96@PlayerUpda:
   0069d	0f 28 c1	 movaps	 xmm0, xmm1
   006a0	f3 0f 11 44 24
 	30		 movss	 DWORD PTR $T13[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 265  : 			AddForceLimitVelX(*playerData, playerData->transform, attk1MoveAmnts[plrAnim->curAnimFrame] * deltaTime() * attack1MoveAmnt * playerData->transform.scale.x, playerSpeed);
 
@@ -2151,7 +2151,7 @@ $LN108@PlayerUpda:
 	00 00		 mov	 rax, QWORD PTR plrAnim
   007f6	48 89 84 24 48
 	01 00 00	 mov	 QWORD PTR animator$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 
 ; 30   : 	if (anim->animating == check) return;
 
@@ -2186,7 +2186,7 @@ $LN113@PlayerUpda:
   0083d	48 8b 84 24 48
 	01 00 00	 mov	 rax, QWORD PTR animator$[rsp]
   00845	c6 40 2c 01	 mov	 BYTE PTR [rax+44], 1
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 280  : 		}
 
@@ -2225,7 +2225,7 @@ $LN21@PlayerUpda:
 	00 00		 mov	 rax, QWORD PTR plrAnim
   0089c	48 89 84 24 40
 	01 00 00	 mov	 QWORD PTR animator$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 
 ; 30   : 	if (anim->animating == check) return;
 
@@ -2259,7 +2259,7 @@ $LN120@PlayerUpda:
   008e0	48 8b 84 24 40
 	01 00 00	 mov	 rax, QWORD PTR animator$[rsp]
   008e8	c6 40 2c 01	 mov	 BYTE PTR [rax+44], 1
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 283  : 		}
 
@@ -2273,7 +2273,7 @@ $LN19@PlayerUpda:
 	00 00		 mov	 rax, QWORD PTR plrAnim
   008f5	48 89 84 24 38
 	01 00 00	 mov	 QWORD PTR animator$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 
 ; 30   : 	if (anim->animating == check) return;
 
@@ -2307,7 +2307,7 @@ $LN127@PlayerUpda:
   00933	48 8b 84 24 38
 	01 00 00	 mov	 rax, QWORD PTR animator$[rsp]
   0093b	c6 40 2c 01	 mov	 BYTE PTR [rax+44], 1
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 286  : 			idleTransImminent = false;
 
@@ -2325,7 +2325,7 @@ $LN7@PlayerUpda:
   0094d	48 8b 40 0c	 mov	 rax, QWORD PTR [rax+12]
   00951	48 89 84 24 08
 	01 00 00	 mov	 QWORD PTR vector$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 81   : 	_this.x = -vector.x;
 
@@ -2350,7 +2350,7 @@ $LN7@PlayerUpda:
   0098b	48 8b 84 24 28
 	01 00 00	 mov	 rax, QWORD PTR _this$21[rsp]
   00993	48 89 44 24 38	 mov	 QWORD PTR $T14[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 290  : 	negPlrPos = NegVector(playerData->transform.position);
 
@@ -2369,7 +2369,7 @@ $LN7@PlayerUpda:
 	00 00		 mov	 rax, QWORD PTR camPosition
   009be	48 89 84 24 a8
 	00 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 35   : 	_this.x = lhs.x + rhs.x;
 
@@ -2394,14 +2394,14 @@ $LN7@PlayerUpda:
   009fc	48 8b 84 24 e8
 	00 00 00	 mov	 rax, QWORD PTR _this$20[rsp]
   00a04	48 89 44 24 40	 mov	 QWORD PTR $T15[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 291  : 	if (SqrMagnitude(AddVectors(camPosition, playerData->transform.position)) >= nugEpsilon) {
 
   00a09	48 8b 44 24 40	 mov	 rax, QWORD PTR $T15[rsp]
   00a0e	48 89 84 24 88
 	00 00 00	 mov	 QWORD PTR vector$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 125  : 	return vector.x * vector.x + vector.y * vector.y;
 
@@ -2416,7 +2416,7 @@ $LN7@PlayerUpda:
   00a3a	f3 0f 58 c1	 addss	 xmm0, xmm1
   00a3e	f3 0f 11 44 24
 	48		 movss	 DWORD PTR $T16[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 291  : 	if (SqrMagnitude(AddVectors(camPosition, playerData->transform.position)) >= nugEpsilon) {
 
@@ -2434,7 +2434,7 @@ $LN7@PlayerUpda:
 	00 00 00	 mulss	 xmm0, DWORD PTR __real@41200000
   00a64	f3 0f 11 44 24
 	78		 movss	 DWORD PTR t$[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 57   : 	return a * (1.0f - t) + b * t;
 
@@ -2453,7 +2453,7 @@ $LN7@PlayerUpda:
   00a95	f3 0f 58 c1	 addss	 xmm0, xmm1
   00a99	f3 0f 11 44 24
 	58		 movss	 DWORD PTR $T17[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 292  : 		ChangeCameraPosition(CamLerp(x), CamLerp(y));
 
@@ -2466,7 +2466,7 @@ $LN7@PlayerUpda:
 	00 00 00	 mulss	 xmm0, DWORD PTR __real@41200000
   00aba	f3 0f 11 44 24
 	70		 movss	 DWORD PTR t$[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 57   : 	return a * (1.0f - t) + b * t;
 
@@ -2485,7 +2485,7 @@ $LN7@PlayerUpda:
   00aeb	f3 0f 58 c1	 addss	 xmm0, xmm1
   00aef	f3 0f 11 44 24
 	68		 movss	 DWORD PTR $T18[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 292  : 		ChangeCameraPosition(CamLerp(x), CamLerp(y));
 
@@ -2505,7 +2505,7 @@ $LN22@PlayerUpda:
   00b12	0f 2f 05 00 00
 	00 00		 comiss	 xmm0, DWORD PTR playerImmuneET
   00b19	76 6b		 jbe	 SHORT $LN23@PlayerUpda
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 
 ; 343  : 	QueryPerformanceCounter(&cTime);
 
@@ -2534,7 +2534,7 @@ $LN22@PlayerUpda:
 	00 00 00	 mulss	 xmm0, DWORD PTR timeScale
   00b61	f3 0f 11 44 24
 	6c		 movss	 DWORD PTR $T19[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 
 ; 295  : 		playerImmuneET += deltaTime();
 
@@ -2639,7 +2639,7 @@ $LN52@PlayerUpda:
 PlayerUpdate ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT NegVector
 _TEXT	SEGMENT
 _this$ = 40
@@ -2698,7 +2698,7 @@ $LN3:
 NegVector ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT SqrMagnitude
 _TEXT	SEGMENT
 vector$ = 64
@@ -2734,7 +2734,7 @@ $LN3:
 SqrMagnitude ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 ;	COMDAT limitedDeltaTime
 _TEXT	SEGMENT
 $T1 = 48
@@ -2750,7 +2750,7 @@ $LN13:
   00000	40 57		 push	 rdi
   00002	48 83 ec 50	 sub	 rsp, 80			; 00000050H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__E0493894_main@h
+	00 00		 lea	 rcx, OFFSET FLAT:__DD0D2CA2_main@h
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 343  : 	QueryPerformanceCounter(&cTime);
@@ -2897,7 +2897,7 @@ $LN6@limitedDel:
 limitedDeltaTime ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 ;	COMDAT ResetAnim
 _TEXT	SEGMENT
 anim$ = 48
@@ -2910,7 +2910,7 @@ $LN3:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 27   : 	anim->curAnimFrame = -1;
@@ -2927,7 +2927,7 @@ $LN3:
 ResetAnim ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 ;	COMDAT CheckResetAnim
 _TEXT	SEGMENT
 anim$ = 48
@@ -2942,7 +2942,7 @@ $LN6:
   0000a	57		 push	 rdi
   0000b	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 30   : 	if (anim->animating == check) return;
@@ -2971,7 +2971,7 @@ $LN1@CheckReset:
 CheckResetAnim ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 ;	COMDAT FinishedAnim
 _TEXT	SEGMENT
 tv77 = 32
@@ -2988,7 +2988,7 @@ $LN7:
   0000a	57		 push	 rdi
   0000b	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 34   : 	return animator->animating != animation || animator->curAnimFrame == animator->animFrameNo[animation] - 1;
@@ -3033,7 +3033,7 @@ $LN6@FinishedAn:
 FinishedAnim ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 ;	COMDAT FinishedAnim2
 _TEXT	SEGMENT
 isAnim$ = 32
@@ -3056,7 +3056,7 @@ $LN11:
   00010	57		 push	 rdi
   00011	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   00015	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   0001c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 38   : 	bool isAnim = animator->animating == animation;
@@ -3123,7 +3123,7 @@ $LN10@FinishedAn:
 FinishedAnim2 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 ;	COMDAT StartAnim
 _TEXT	SEGMENT
 animator$ = 48
@@ -3138,7 +3138,7 @@ $LN8:
   0000a	57		 push	 rdi
   0000b	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 30   : 	if (anim->animating == check) return;
@@ -3178,7 +3178,7 @@ $LN3@StartAnim:
 StartAnim ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 ;	COMDAT StartNonLoopAnim3
 _TEXT	SEGMENT
 tv73 = 32
@@ -3197,7 +3197,7 @@ $LN20:
   00010	57		 push	 rdi
   00011	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00015	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__565DCB0D_animations@h
+	00 00		 lea	 rcx, OFFSET FLAT:__29DBA756_animations@h
   0001c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 30   : 	if (anim->animating == check) return;
@@ -3253,7 +3253,7 @@ $LN4@StartNonLo:
 StartNonLoopAnim3 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 ;	COMDAT Lerp
 _TEXT	SEGMENT
 a$ = 64
@@ -3273,7 +3273,7 @@ $LN3:
   00012	57		 push	 rdi
   00013	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00017	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__46B7CB64_math@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7BF3DF52_math@h
   0001e	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 57   : 	return a * (1.0f - t) + b * t;
@@ -3300,7 +3300,7 @@ $LN3:
 Lerp	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 _TEXT	SEGMENT
 i$1 = 32
 tv83 = 36
@@ -3312,7 +3312,7 @@ $LN6:
   00000	40 57		 push	 rdi
   00002	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 184  : 	DeleteEntity(playerEntity, true);
@@ -3370,7 +3370,7 @@ $LN3@PlayerFina:
 PlayerFinalize ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 ;	COMDAT TryDestAttk1
 _TEXT	SEGMENT
 TryDestAttk1 PROC					; COMDAT
@@ -3381,7 +3381,7 @@ $LN4:
   00000	40 57		 push	 rdi
   00002	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 209  : 	if (!attack1ColNode) return;
@@ -3408,7 +3408,7 @@ $LN1@TryDestAtt:
 TryDestAttk1 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Player.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c
 _TEXT	SEGMENT
 animation$ = 48
 PlrFinAnim PROC
@@ -3419,7 +3419,7 @@ PlrFinAnim PROC
   00004	57		 push	 rdi
   00005	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   00009	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00010	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 216  : 	return FinishedAnim(plrAnim, animation);

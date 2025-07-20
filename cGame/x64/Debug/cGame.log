@@ -16,88 +16,88 @@
   entityAdder.c
   EntityManager.c
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'collisions.c')
-      C:\Users\drago\source\repos\cGame - less comments\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+  (compiling source file 'animations.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
       see previous definition of 'APIENTRY'
   
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
   (compiling source file 'Debug.c')
-      C:\Users\drago\source\repos\cGame - less comments\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
-      see previous definition of 'APIENTRY'
-  
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'math.c')
-      C:\Users\drago\source\repos\cGame - less comments\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
-      see previous definition of 'APIENTRY'
-  
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'animations.c')
-      C:\Users\drago\source\repos\cGame - less comments\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
-      see previous definition of 'APIENTRY'
-  
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'Mesh.c')
-      C:\Users\drago\source\repos\cGame - less comments\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
-      see previous definition of 'APIENTRY'
-  
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'Physics.c')
-      C:\Users\drago\source\repos\cGame - less comments\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
-      see previous definition of 'APIENTRY'
-  
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'scene%201.c')
-      C:\Users\drago\source\repos\cGame - less comments\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
-      see previous definition of 'APIENTRY'
-  
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'main.c')
-      C:\Users\drago\source\repos\cGame - less comments\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
       see previous definition of 'APIENTRY'
   
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
   (compiling source file 'Player.c')
-      C:\Users\drago\source\repos\cGame - less comments\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
       see previous definition of 'APIENTRY'
   
-C:\Users\drago\source\repos\cGame - less comments\cGame\Debug.c(9,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'void *'
-C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c(10,9): warning C4005: 'Insert': macro redefinition
-      C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.h(61,9):
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'math.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'collisions.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'Mesh.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'scene%201.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'Physics.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'main.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(52,20): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(52,20): warning C4024: 'ThrowError': different types for formal and actual parameter 1
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(107,20): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(107,20): warning C4024: 'ThrowError': different types for formal and actual parameter 1
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(121,81): warning C4028: formal parameter 4 different from declaration
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(128,14): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(128,14): warning C4024: 'ThrowError': different types for formal and actual parameter 1
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(129,31): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(129,31): warning C4024: 'glBindTexture': different types for formal and actual parameter 2
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(135,53): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(135,53): warning C4024: '__glewBindTextureUnit': different types for formal and actual parameter 2
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(145,14): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(145,14): warning C4024: 'ThrowError': different types for formal and actual parameter 1
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(146,31): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(146,31): warning C4024: 'glBindTexture': different types for formal and actual parameter 2
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(152,53): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(152,53): warning C4024: '__glewBindTextureUnit': different types for formal and actual parameter 2
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Debug.c(9,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'void *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c(133,2): warning C4047: 'function': 'uint *' differs in levels of indirection from 'uint **'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c(133,2): warning C4024: 'InitSingleTexture': different types for formal and actual parameter 4
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c(258,7): warning C4090: '=': different 'const' qualifiers
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c(378,7): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c(378,7): warning C4024: 'glBindTexture': different types for formal and actual parameter 2
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c(10,9): warning C4005: 'Insert': macro redefinition
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.h(61,9):
       see previous definition of 'Insert'
   
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(52,20): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(52,20): warning C4024: 'ThrowError': different types for formal and actual parameter 1
-C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c(26,2): warning C4098: 'InsertAtMainHead': 'void' function returning a value
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(107,20): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(107,20): warning C4024: 'ThrowError': different types for formal and actual parameter 1
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(121,81): warning C4028: formal parameter 4 different from declaration
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(128,14): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(128,14): warning C4024: 'ThrowError': different types for formal and actual parameter 1
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(129,31): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(129,31): warning C4024: 'glBindTexture': different types for formal and actual parameter 2
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(135,53): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(135,53): warning C4024: '__glewBindTextureUnit': different types for formal and actual parameter 2
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(145,14): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(145,14): warning C4024: 'ThrowError': different types for formal and actual parameter 1
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(146,31): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(146,31): warning C4024: 'glBindTexture': different types for formal and actual parameter 2
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(152,53): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
-C:\Users\drago\source\repos\cGame - less comments\cGame\animations.c(152,53): warning C4024: '__glewBindTextureUnit': different types for formal and actual parameter 2
-C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c(396,7): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
-C:\Users\drago\source\repos\cGame - less comments\cGame\main.c(258,7): warning C4090: '=': different 'const' qualifiers
-C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c(378,7): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
-C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c(378,7): warning C4024: 'glBindTexture': different types for formal and actual parameter 2
-C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c(133,2): warning C4047: 'function': 'uint *' differs in levels of indirection from 'uint **'
-C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c(133,2): warning C4024: 'InitSingleTexture': different types for formal and actual parameter 4
-C:\Users\drago\source\repos\cGame - less comments\cGame\Dictionary.c(95,2): warning C4047: 'return': 'uint' differs in levels of indirection from 'void *'
-C:\Users\drago\source\repos\cGame - less comments\cGame\Dictionary.c(118,2): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
-C:\Users\drago\source\repos\cGame - less comments\cGame\Dictionary.c(174,11): warning C4142: 'NugHash': benign redefinition of type
-      C:\Users\drago\source\repos\cGame - less comments\cGame\Dictionary.h(48,11):
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c(26,2): warning C4098: 'InsertAtMainHead': 'void' function returning a value
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(396,7): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Dictionary.c(95,2): warning C4047: 'return': 'uint' differs in levels of indirection from 'void *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Dictionary.c(118,2): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Dictionary.c(174,11): warning C4142: 'NugHash': benign redefinition of type
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Dictionary.h(48,11):
       see declaration of 'NugHash'
   
   animations.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
 LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
   Generating code
-C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c(136): warning C4716: 'CreateColAndSetPts': must return a value
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c(136): warning C4716: 'CreateColAndSetPts': must return a value
   Finished generating code
-  cGame.vcxproj -> C:\Users\drago\source\repos\cGame - less comments\x64\Debug\cGame.exe
+  cGame.vcxproj -> C:\Users\drago\OneDrive\Documents\GitHub\c-game\x64\Debug\cGame.exe

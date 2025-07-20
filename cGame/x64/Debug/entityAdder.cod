@@ -184,26 +184,26 @@ __0A3AF599_imm@h DB 01H
 __11B87C25_Windows@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__13490EC2_glew@h DB 01H
+__5B769280_glew@h DB 01H
 __F2638511_stdbool@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
+__0A1327A7_glfw3@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
+__7570C268_vectors@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
-__E0493894_main@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__565DCB0D_animations@h DB 01H
-__D929D131_Physics@h DB 01H
-__294C502B_Mesh@h DB 01H
-__D1DC2946_EntityManager@h DB 01H
-__863E315E_entityAdder@h DB 01H
-__46B7CB64_math@h DB 01H
-__1F46D782_scene 1@h DB 01H
-__11ECE8D6_entityAdder@c DB 01H
+__DD0D2CA2_main@h DB 01H
+__9378A798_Debug@h DB 01H
+__29DBA756_animations@h DB 01H
+__A6D01AF2_Physics@h DB 01H
+__1408441D_Mesh@h DB 01H
+__7CA6EAD6_EntityManager@h DB 01H
+__7AF83F4E_entityAdder@h DB 01H
+__7BF3DF52_math@h DB 01H
+__60BF1C41_scene 1@h DB 01H
+__ED2AE6C6_entityAdder@c DB 01H
 __8C83BECC_concurrencysal@h DB 01H
 __608E3340_sal@h DB 01H
 __FB67E29A_vadefs@h DB 01H
@@ -365,23 +365,23 @@ __0A3AF599_imm@h DB 01H
 __11B87C25_Windows@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__13490EC2_glew@h DB 01H
+__5B769280_glew@h DB 01H
 __F2638511_stdbool@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
+__0A1327A7_glfw3@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
+__7570C268_vectors@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
-__E0493894_main@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__565DCB0D_animations@h DB 01H
-__D929D131_Physics@h DB 01H
-__294C502B_Mesh@h DB 01H
-__D1DC2946_EntityManager@h DB 01H
-__863E315E_entityAdder@h DB 01H
+__DD0D2CA2_main@h DB 01H
+__9378A798_Debug@h DB 01H
+__29DBA756_animations@h DB 01H
+__A6D01AF2_Physics@h DB 01H
+__1408441D_Mesh@h DB 01H
+__7CA6EAD6_EntityManager@h DB 01H
+__7AF83F4E_entityAdder@h DB 01H
 PUBLIC	CreateCollider3
 PUBLIC	CreateColAndSetPts
 PUBLIC	CreateCollider
@@ -812,7 +812,7 @@ SubscribeEntity$rtcFrameData DD 09H
 	DD	00H
 	DQ	FLAT:SubscribeEntity$rtcVarDesc
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 col$ = 48
 DestroyCollider PROC
@@ -824,7 +824,7 @@ $LN8:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 151  : 	DelEntNode(*col);
@@ -862,21 +862,21 @@ $LN8:
 DestroyCollider ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 this$ = 32
 data$ = 40
@@ -933,7 +933,7 @@ $LN49:
   0001e	48 8b 8c 24 f0
 	01 00 00	 mov	 rcx, QWORD PTR [rsp+496]
   00026	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0002d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 29   : 	entityNode* this = malloc(sizeof(entityNode));
@@ -993,7 +993,7 @@ $LN49:
   000cd	f3 0f 11 44 24
 	30		 movss	 DWORD PTR size$12[rsp], xmm0
 $LN2@SubscribeE:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -1049,7 +1049,7 @@ $LN16@SubscribeE:
   00174	0f 28 c1	 movaps	 xmm0, xmm1
   00177	f3 0f 11 44 24
 	3c		 movss	 DWORD PTR $T15[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 33   : 	checkGridScale(add);
 
@@ -1093,7 +1093,7 @@ $LN3@SubscribeE:
   001fd	f3 0f 11 44 24
 	34		 movss	 DWORD PTR size$13[rsp], xmm0
 $LN4@SubscribeE:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -1149,7 +1149,7 @@ $LN24@SubscribeE:
   002a4	0f 28 c1	 movaps	 xmm0, xmm1
   002a7	f3 0f 11 44 24
 	44		 movss	 DWORD PTR $T17[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 33   : 	checkGridScale(add);
 
@@ -1188,7 +1188,7 @@ $LN5@SubscribeE:
   0030a	48 8b 44 01 2c	 mov	 rax, QWORD PTR [rcx+rax+44]
   0030f	48 89 84 24 58
 	01 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 35   : 	_this.x = lhs.x + rhs.x;
 
@@ -1213,14 +1213,14 @@ $LN5@SubscribeE:
   0034d	48 8b 84 24 98
 	01 00 00	 mov	 rax, QWORD PTR _this$27[rsp]
   00355	48 89 44 24 48	 mov	 QWORD PTR $T18[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 35   : 	add->origMidpoint = VectorDivByScalar(AddVectors(add->origAABB[1], *add->origAABB), 2.0f);
 
   0035a	48 8b 44 24 48	 mov	 rax, QWORD PTR $T18[rsp]
   0035f	48 89 84 24 18
 	01 00 00	 mov	 QWORD PTR a$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 129  : 	_this.x = a.x / b;
 
@@ -1245,7 +1245,7 @@ $LN5@SubscribeE:
   0039b	48 8b 84 24 38
 	01 00 00	 mov	 rax, QWORD PTR _this$26[rsp]
   003a3	48 89 44 24 50	 mov	 QWORD PTR $T19[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 35   : 	add->origMidpoint = VectorDivByScalar(AddVectors(add->origAABB[1], *add->origAABB), 2.0f);
 
@@ -1269,7 +1269,7 @@ $LN5@SubscribeE:
   003de	48 83 c0 1c	 add	 rax, 28
   003e2	48 89 84 24 88
 	00 00 00	 mov	 QWORD PTR a$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 112  : 	*a = VectorMult(*a, b);
 
@@ -1314,7 +1314,7 @@ $LN5@SubscribeE:
 	00 00 00	 mov	 rcx, QWORD PTR a$[rsp]
   0045d	48 89 01	 mov	 QWORD PTR [rcx], rax
 $LN6@SubscribeE:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 37   : 	if (data) {
 
@@ -1377,7 +1377,7 @@ $LN7@SubscribeE:
   004db	b9 0a 00 00 00	 mov	 ecx, 10
   004e0	f7 f1		 div	 ecx
   004e2	89 44 24 78	 mov	 DWORD PTR lhs$[rsp], eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 39   : 	bool b = lhs >= rhs;
 
@@ -1433,7 +1433,7 @@ $LN40@SubscribeE:
 	00 00 01	 imul	 ecx, DWORD PTR tv264[rsp], 1
   00573	03 c1		 add	 eax, ecx
   00575	89 44 24 60	 mov	 DWORD PTR $T21[rsp], eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 45   : 	nodeSection = IMax(noOfCellChecks / NUM_THREADS, 1);
 
@@ -1461,7 +1461,7 @@ $LN40@SubscribeE:
   005a6	2b c8		 sub	 ecx, eax
   005a8	8b c1		 mov	 eax, ecx
   005aa	89 44 24 68	 mov	 DWORD PTR lhs$[rsp], eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 39   : 	bool b = lhs >= rhs;
 
@@ -1514,7 +1514,7 @@ $LN48@SubscribeE:
 	00 00 0a	 imul	 ecx, DWORD PTR tv274[rsp], 10
   00632	03 c1		 add	 eax, ecx
   00634	89 44 24 64	 mov	 DWORD PTR $T22[rsp], eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 47   : 	endOfNodes = IMax(noOfCellChecks - nodeExcess, NUM_THREADS);
 
@@ -1562,11 +1562,11 @@ $LN48@SubscribeE:
 SubscribeEntity ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 entity$ = 32
 aabbSize$ = 40
@@ -1600,7 +1600,7 @@ $LN7:
   00028	48 8b 8c 24 10
 	01 00 00	 mov	 rcx, QWORD PTR [rsp+272]
   00030	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00037	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 121  : 	Entity* entity = malloc(sizeof(Entity));
@@ -1650,7 +1650,7 @@ $LN7:
   000b3	48 8b 04 01	 mov	 rax, QWORD PTR [rcx+rax]
   000b7	48 89 84 24 98
 	00 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 35   : 	_this.x = lhs.x + rhs.x;
 
@@ -1675,13 +1675,13 @@ $LN7:
   000f5	48 8b 84 24 d8
 	00 00 00	 mov	 rax, QWORD PTR _this$11[rsp]
   000fd	48 89 44 24 38	 mov	 QWORD PTR $T8[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 125  : 	entity->origMidpoint = VectorDivByScalar(AddVectors(AABB[1], *AABB), 2.0f);
 
   00102	48 8b 44 24 38	 mov	 rax, QWORD PTR $T8[rsp]
   00107	48 89 44 24 58	 mov	 QWORD PTR a$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 129  : 	_this.x = a.x / b;
 
@@ -1705,7 +1705,7 @@ $LN7:
 
   00134	48 8b 44 24 78	 mov	 rax, QWORD PTR _this$10[rsp]
   00139	48 89 44 24 40	 mov	 QWORD PTR $T9[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 125  : 	entity->origMidpoint = VectorDivByScalar(AddVectors(AABB[1], *AABB), 2.0f);
 
@@ -1765,7 +1765,7 @@ $LN7:
 CreateCollider2 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 _this$ = 32
 mesh$ = 40
@@ -1779,7 +1779,7 @@ $LN4:
   00005	57		 push	 rdi
   00006	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 101  : 	SliderList* _this = malloc(sizeof(SliderList));
@@ -1858,7 +1858,7 @@ $LN2@SubscribeS:
 SubscribeSlider ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 data$ = 32
 i$1 = 40
@@ -1875,7 +1875,7 @@ $LN12:
   00009	57		 push	 rdi
   0000a	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000e	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00015	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 73   : 	PhysicsData* data = toDelete->entity->physicsData;
@@ -1979,7 +1979,7 @@ $LN5@DeleteEnti:
 DeleteEntity ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 node$ = 48
 DeleteSlider PROC
@@ -1991,7 +1991,7 @@ $LN8:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 82   : 	DeleteSQuad(node->value->mesh);
@@ -2021,21 +2021,21 @@ $LN8:
 DeleteSlider ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 this$ = 32
 data$ = 40
@@ -2092,7 +2092,7 @@ $LN49:
   0001e	48 8b 8c 24 f0
 	01 00 00	 mov	 rcx, QWORD PTR [rsp+496]
   00026	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0002d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 52   : 	entityNode* this = malloc(sizeof(entityNode));
@@ -2144,7 +2144,7 @@ $LN49:
   000aa	48 8b 44 01 2c	 mov	 rax, QWORD PTR [rcx+rax+44]
   000af	48 89 84 24 58
 	01 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 35   : 	_this.x = lhs.x + rhs.x;
 
@@ -2169,14 +2169,14 @@ $LN49:
   000ed	48 8b 84 24 98
 	01 00 00	 mov	 rax, QWORD PTR _this$27[rsp]
   000f5	48 89 44 24 38	 mov	 QWORD PTR $T14[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 57   : 	add->origMidpoint = VectorDivByScalar(AddVectors(add->origAABB[1], *add->origAABB), 2.0f);
 
   000fa	48 8b 44 24 38	 mov	 rax, QWORD PTR $T14[rsp]
   000ff	48 89 84 24 18
 	01 00 00	 mov	 QWORD PTR a$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 129  : 	_this.x = a.x / b;
 
@@ -2201,7 +2201,7 @@ $LN49:
   0013b	48 8b 84 24 38
 	01 00 00	 mov	 rax, QWORD PTR _this$26[rsp]
   00143	48 89 44 24 40	 mov	 QWORD PTR $T15[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 57   : 	add->origMidpoint = VectorDivByScalar(AddVectors(add->origAABB[1], *add->origAABB), 2.0f);
 
@@ -2225,7 +2225,7 @@ $LN49:
   0017e	48 83 c0 1c	 add	 rax, 28
   00182	48 89 84 24 88
 	00 00 00	 mov	 QWORD PTR a$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 112  : 	*a = VectorMult(*a, b);
 
@@ -2270,7 +2270,7 @@ $LN49:
 	00 00 00	 mov	 rcx, QWORD PTR a$[rsp]
   001fd	48 89 01	 mov	 QWORD PTR [rcx], rax
 $LN2@SubscribeE:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 59   : 	checkGridScale(add);
 
@@ -2303,7 +2303,7 @@ $LN2@SubscribeE:
   00261	f3 0f 11 44 24
 	30		 movss	 DWORD PTR size$12[rsp], xmm0
 $LN3@SubscribeE:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -2359,7 +2359,7 @@ $LN24@SubscribeE:
   00308	0f 28 c1	 movaps	 xmm0, xmm1
   0030b	f3 0f 11 44 24
 	54		 movss	 DWORD PTR $T18[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 59   : 	checkGridScale(add);
 
@@ -2403,7 +2403,7 @@ $LN4@SubscribeE:
   00391	f3 0f 11 44 24
 	34		 movss	 DWORD PTR size$13[rsp], xmm0
 $LN5@SubscribeE:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -2459,7 +2459,7 @@ $LN32@SubscribeE:
   00438	0f 28 c1	 movaps	 xmm0, xmm1
   0043b	f3 0f 11 44 24
 	5c		 movss	 DWORD PTR $T20[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 59   : 	checkGridScale(add);
 
@@ -2524,7 +2524,7 @@ $LN7@SubscribeE:
   004c2	b9 0a 00 00 00	 mov	 ecx, 10
   004c7	f7 f1		 div	 ecx
   004c9	89 44 24 78	 mov	 DWORD PTR lhs$[rsp], eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 39   : 	bool b = lhs >= rhs;
 
@@ -2580,7 +2580,7 @@ $LN40@SubscribeE:
 	00 00 01	 imul	 ecx, DWORD PTR tv262[rsp], 1
   0055a	03 c1		 add	 eax, ecx
   0055c	89 44 24 60	 mov	 DWORD PTR $T21[rsp], eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 66   : 	nodeSection = IMax(noOfCellChecks / NUM_THREADS, 1);
 
@@ -2608,7 +2608,7 @@ $LN40@SubscribeE:
   0058d	2b c8		 sub	 ecx, eax
   0058f	8b c1		 mov	 eax, ecx
   00591	89 44 24 68	 mov	 DWORD PTR lhs$[rsp], eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 39   : 	bool b = lhs >= rhs;
 
@@ -2661,7 +2661,7 @@ $LN48@SubscribeE:
 	00 00 0a	 imul	 ecx, DWORD PTR tv272[rsp], 10
   00619	03 c1		 add	 eax, ecx
   0061b	89 44 24 64	 mov	 DWORD PTR $T22[rsp], eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 68   : 	endOfNodes = IMax(noOfCellChecks - nodeExcess, NUM_THREADS);
 
@@ -2709,7 +2709,7 @@ $LN48@SubscribeE:
 SubscribeEntity_Without_Scale ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.h
 ;	COMDAT RemoveEntAppropriate
 _TEXT	SEGMENT
 tv76 = 32
@@ -2772,7 +2772,7 @@ $LN1@RemoveEntA:
 RemoveEntAppropriate ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.h
 ;	COMDAT RemoveSliderNode
 _TEXT	SEGMENT
 previous$ = 32
@@ -2787,7 +2787,7 @@ $LN6:
   00005	57		 push	 rdi
   00006	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__D1DC2946_EntityManager@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7CA6EAD6_EntityManager@h
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 15   : 	Remove2(remove, sliderHead, SliderList);
@@ -2832,7 +2832,7 @@ $LN4@RemoveSlid:
 RemoveSliderNode ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 ;	COMDAT IMax
 _TEXT	SEGMENT
 b$ = 32
@@ -2851,7 +2851,7 @@ $LN9:
   00008	57		 push	 rdi
   00009	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000d	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__46B7CB64_math@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7BF3DF52_math@h
   00014	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 39   : 	bool b = lhs >= rhs;
@@ -2906,7 +2906,7 @@ $LN8@IMax:
 IMax	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 add$ = 48
 InsertAtMainHead PROC
@@ -2918,7 +2918,7 @@ $LN4:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 22   : 	add->next = entityHead;
@@ -2963,7 +2963,7 @@ $LN2@InsertAtMa:
 InsertAtMainHead ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 toDelete$ = 48
 DeleteHealthbar PROC
@@ -2975,7 +2975,7 @@ $LN3:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   00016	90		 npad	 1
 
@@ -2988,7 +2988,7 @@ $LN3:
 DeleteHealthbar ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 toDelete$ = 48
 DeleteSquishable PROC
@@ -3000,7 +3000,7 @@ $LN3:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   00016	90		 npad	 1
 
@@ -3013,7 +3013,7 @@ $LN3:
 DeleteSquishable ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 _this$ = 32
 add$ = 64
@@ -3026,7 +3026,7 @@ $LN4:
   00005	57		 push	 rdi
   00006	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 93   : 	squishList* _this = malloc(sizeof(squishList));
@@ -3105,11 +3105,11 @@ $LN2@SubscribeS:
 SubscribeSquishable ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 entity$ = 32
 aabbSize$ = 40
@@ -3139,7 +3139,7 @@ $LN7:
   0001f	48 8b 8c 24 10
 	01 00 00	 mov	 rcx, QWORD PTR [rsp+272]
   00027	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0002e	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 110  : 	Entity* entity = malloc(sizeof(Entity));
@@ -3189,7 +3189,7 @@ $LN7:
   000aa	48 8b 04 01	 mov	 rax, QWORD PTR [rcx+rax]
   000ae	48 89 84 24 98
 	00 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 35   : 	_this.x = lhs.x + rhs.x;
 
@@ -3214,13 +3214,13 @@ $LN7:
   000ec	48 8b 84 24 d8
 	00 00 00	 mov	 rax, QWORD PTR _this$11[rsp]
   000f4	48 89 44 24 38	 mov	 QWORD PTR $T8[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 114  : 	entity->origMidpoint = VectorDivByScalar(AddVectors(AABB[1], *AABB), 2.0f);
 
   000f9	48 8b 44 24 38	 mov	 rax, QWORD PTR $T8[rsp]
   000fe	48 89 44 24 58	 mov	 QWORD PTR a$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 129  : 	_this.x = a.x / b;
 
@@ -3244,7 +3244,7 @@ $LN7:
 
   0012b	48 8b 44 24 78	 mov	 rax, QWORD PTR _this$10[rsp]
   00130	48 89 44 24 40	 mov	 QWORD PTR $T9[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 114  : 	entity->origMidpoint = VectorDivByScalar(AddVectors(AABB[1], *AABB), 2.0f);
 
@@ -3290,7 +3290,7 @@ $LN7:
 CreateCollider ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 AABB$ = 48
 tag$ = 56
@@ -3306,7 +3306,7 @@ $LN3:
   0000e	57		 push	 rdi
   0000f	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   00013	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0001a	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 134  : 	CreateCollider2(AABB, tag, layer);
@@ -3326,13 +3326,13 @@ $LN3:
 CreateColAndSetPts ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 _TEXT	SEGMENT
 entity$ = 32
 aabbSize$ = 40
@@ -3372,7 +3372,7 @@ $LN9:
   0002d	48 8b 8c 24 70
 	01 00 00	 mov	 rcx, QWORD PTR [rsp+368]
   00035	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0003c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 138  : 	Entity* entity = malloc(sizeof(Entity));
@@ -3422,7 +3422,7 @@ $LN9:
   000b8	48 8b 04 01	 mov	 rax, QWORD PTR [rcx+rax]
   000bc	48 89 84 24 f8
 	00 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 35   : 	_this.x = lhs.x + rhs.x;
 
@@ -3447,14 +3447,14 @@ $LN9:
   000fa	48 8b 84 24 38
 	01 00 00	 mov	 rax, QWORD PTR _this$16[rsp]
   00102	48 89 44 24 38	 mov	 QWORD PTR $T11[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 142  : 	entity->midPoint = AddVectors(entity->origMidpoint = VectorDivByScalar(AddVectors(AABB[1], *AABB), 2.0f), addToMidPt);
 
   00107	48 8b 44 24 38	 mov	 rax, QWORD PTR $T11[rsp]
   0010c	48 89 84 24 b8
 	00 00 00	 mov	 QWORD PTR a$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 129  : 	_this.x = a.x / b;
 
@@ -3479,7 +3479,7 @@ $LN9:
   00148	48 8b 84 24 d8
 	00 00 00	 mov	 rax, QWORD PTR _this$15[rsp]
   00150	48 89 44 24 40	 mov	 QWORD PTR $T12[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 142  : 	entity->midPoint = AddVectors(entity->origMidpoint = VectorDivByScalar(AddVectors(AABB[1], *AABB), 2.0f), addToMidPt);
 
@@ -3492,7 +3492,7 @@ $LN9:
   00170	48 8b 44 24 20	 mov	 rax, QWORD PTR entity$[rsp]
   00175	48 8b 40 1c	 mov	 rax, QWORD PTR [rax+28]
   00179	48 89 44 24 58	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 35   : 	_this.x = lhs.x + rhs.x;
 
@@ -3517,7 +3517,7 @@ $LN9:
   001a8	48 8b 84 24 98
 	00 00 00	 mov	 rax, QWORD PTR _this$14[rsp]
   001b0	48 89 44 24 48	 mov	 QWORD PTR $T13[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\entityAdder.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c
 
 ; 142  : 	entity->midPoint = AddVectors(entity->origMidpoint = VectorDivByScalar(AddVectors(AABB[1], *AABB), 2.0f), addToMidPt);
 

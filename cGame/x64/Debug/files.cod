@@ -176,16 +176,16 @@ __0A3AF599_imm@h DB 01H
 __11B87C25_Windows@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__68CEEE37_glew@h DB 01H
+__20F17275_glew@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
-__5CFF7615_Debug@h DB 01H
+__0A1327A7_glfw3@h DB 01H
+__9378A798_Debug@h DB 01H
 __F2638511_stdbool@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
-__E0493894_main@h DB 01H
-__10CBA501_files@c DB 01H
+__7570C268_vectors@h DB 01H
+__DD0D2CA2_main@h DB 01H
+__DF4C748C_files@c DB 01H
 PUBLIC	ReadSaveFile
 pdata	SEGMENT
 $pdata$ReadSaveFile DD imagerel $LN14
@@ -288,13 +288,13 @@ $LN4@strnlen_s:
 strnlen_s ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\files.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c
 ; File C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\files.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c
 ; File C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\files.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c
 ; File C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\files.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c
 _TEXT	SEGMENT
 fptr$ = 40
 aSingleLineSize$ = 56
@@ -334,7 +334,7 @@ $LN14:
   00034	48 89 84 24 c0
 	00 00 00	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   0003c	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00043	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 10   : 	FILE* fptr = NULL;
@@ -425,7 +425,7 @@ $LN2@ReadSaveFi:
 	00 00		 mov	 QWORD PTR tv152[rsp], 0
   000fe	eb 21		 jmp	 SHORT $LN9@ReadSaveFi
 $LN8@ReadSaveFi:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\files.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c
 
 ; 22   : 		singleLineStrLen = strnlen_s(singleLine, maxLineChar);
 
@@ -447,7 +447,7 @@ $LN9@ReadSaveFi:
 	00 00 00	 mov	 rax, QWORD PTR tv152[rsp]
   00129	48 89 84 24 90
 	00 00 00	 mov	 QWORD PTR $T6[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\files.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c
 
 ; 22   : 		singleLineStrLen = strnlen_s(singleLine, maxLineChar);
 
@@ -485,7 +485,7 @@ $LN13@ReadSaveFi:
 	00 00 00	 mov	 rax, QWORD PTR tv155[rsp]
   00189	48 89 84 24 98
 	00 00 00	 mov	 QWORD PTR $T7[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\files.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c
 
 ; 23   : 		bufferStrlen = strnlen_s(buffer, curBufferSize);
 

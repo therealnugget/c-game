@@ -87,7 +87,7 @@ __4C2AD0C7_winpackagefamily@h DB 01H
 __9DED9ED1_winapifamily@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__68CEEE37_glew@h DB 01H
+__20F17275_glew@h DB 01H
 __8C83BECC_concurrencysal@h DB 01H
 __608E3340_sal@h DB 01H
 __FB67E29A_vadefs@h DB 01H
@@ -95,12 +95,12 @@ __1D1B619C_vcruntime@h DB 01H
 __735960E1_corecrt@h DB 01H
 __955456CD_stddef@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
-__ADED8163_GL stuff@h DB 01H
+__0A1327A7_glfw3@h DB 01H
+__AFFFEBA2_GL stuff@h DB 01H
 __F2638511_stdbool@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
+__7570C268_vectors@h DB 01H
 __12FEDF4E_sdkddkver@h DB 01H
 __9BAEE128_excpt@h DB 01H
 __B7B53233_stdarg@h DB 01H
@@ -255,20 +255,20 @@ __11B87C25_Windows@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
-__E0493894_main@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__565DCB0D_animations@h DB 01H
-__D929D131_Physics@h DB 01H
-__294C502B_Mesh@h DB 01H
-__D1DC2946_EntityManager@h DB 01H
-__1F46D782_scene 1@h DB 01H
+__DD0D2CA2_main@h DB 01H
+__9378A798_Debug@h DB 01H
+__29DBA756_animations@h DB 01H
+__A6D01AF2_Physics@h DB 01H
+__1408441D_Mesh@h DB 01H
+__7CA6EAD6_EntityManager@h DB 01H
+__60BF1C41_scene 1@h DB 01H
 __9E5BC8DA_corecrt_wtime@h DB 01H
 __1FF36214_time@h DB 01H
-__863E315E_entityAdder@h DB 01H
-__901F82D0_player@h DB 01H
-__46B7CB64_math@h DB 01H
-__EBE4262C_Dictionary@h DB 01H
-__88940E0A_scene 1@c DB 01H
+__7AF83F4E_entityAdder@h DB 01H
+__03D9FA9C_player@h DB 01H
+__7BF3DF52_math@h DB 01H
+__94624A77_Dictionary@h DB 01H
+__F76DC5C9_scene 1@c DB 01H
 healthBarYOffset DD 03e6b851fr			; 0.23
 attkDst	DD	03dbe76c9r			; 0.093
 	ORG $+4
@@ -654,17 +654,17 @@ SceneInit$rtcFrameData DD 09H
 	DD	00H
 	DQ	FLAT:SceneInit$rtcVarDesc
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 _TEXT	SEGMENT
 blueColor$ = 72
 i$ = 100
@@ -747,7 +747,7 @@ $LN68:
   00025	48 89 84 24 e0
 	02 00 00	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   0002d	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00034	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 78   : 	float blueColor[4] = { .0f, .2f, .7f, 1.f };
@@ -823,7 +823,7 @@ $LN6@SceneInit:
 
   000ec	eb 88		 jmp	 SHORT $LN2@SceneInit
 $LN3@SceneInit:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 
 ; 380  : 	return (int)(min + (max - min) * ((double)rand() / (double)RAND_MAX));
 
@@ -852,7 +852,7 @@ $LN3@SceneInit:
   00145	f2 0f 2c c0	 cvttsd2si eax, xmm0
   00149	89 84 24 a0 01
 	00 00		 mov	 DWORD PTR $T22[rsp], eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 85   : 	noOfEnemies = RandInt(1, MAX_ENEMY_COUNT);
 
@@ -1407,7 +1407,7 @@ $LN18@SceneInit:
   00765	b8 09 00 00 00	 mov	 eax, 9
   0076a	66 89 84 24 f0
 	00 00 00	 mov	 WORD PTR numberOfAnimations$[rsp], ax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 
 ; 383  : 	return min + (max - min) * (float)rand() / (float)RAND_MAX;
 
@@ -1431,7 +1431,7 @@ $LN18@SceneInit:
   007b4	0f 28 c1	 movaps	 xmm0, xmm1
   007b7	f3 0f 11 84 24
 	a4 01 00 00	 movss	 DWORD PTR $T23[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 133  : 	DefaultEntities_TexCoordAnim(enemies, enemyNodes, noOfEnemies, ENEMY_TEXTURE_ID, -.07f, -.465f, .03f, .355f, false, 1.0f, enemyLayer, SHADER_ENEMYTEXID, RandFloat(.0f, 15.0f), -.175f, origEnemyScale.x, origEnemyScale.y, enemyTag, "images/monk/player.png", ENEMY_TEXTURE_INDEX, wrapper, noOfFrames, AddUintVal2((uintptr_t)curEntity, i);, *animPts, animScales);
 
@@ -1696,7 +1696,7 @@ $LN24@SceneInit:
 	00 00 00	 mov	 rax, QWORD PTR data$[rsp]
   00b8e	48 8b 48 20	 mov	 rcx, QWORD PTR [rax+32]
   00b92	e8 00 00 00 00	 call	 defaultMesh
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 
 ; 383  : 	return min + (max - min) * (float)rand() / (float)RAND_MAX;
 
@@ -1720,7 +1720,7 @@ $LN24@SceneInit:
   00bd9	0f 28 c1	 movaps	 xmm0, xmm1
   00bdc	f3 0f 11 84 24
 	a8 01 00 00	 movss	 DWORD PTR $T24[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 133  : 	DefaultEntities_TexCoordAnim(enemies, enemyNodes, noOfEnemies, ENEMY_TEXTURE_ID, -.07f, -.465f, .03f, .355f, false, 1.0f, enemyLayer, SHADER_ENEMYTEXID, RandFloat(.0f, 15.0f), -.175f, origEnemyScale.x, origEnemyScale.y, enemyTag, "images/monk/player.png", ENEMY_TEXTURE_INDEX, wrapper, noOfFrames, AddUintVal2((uintptr_t)curEntity, i);, *animPts, animScales);
 
@@ -2139,7 +2139,7 @@ $LN30@SceneInit:
 	00 00		 mov	 rax, QWORD PTR oneVector
   0119d	48 89 84 24 08
 	02 00 00	 mov	 QWORD PTR vector$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 61   : 	Vector2 _this = { vector.x * scalar, vector.y * scalar };
 
@@ -2162,7 +2162,7 @@ $LN30@SceneInit:
 	02 00 00	 mov	 rax, QWORD PTR _this$28[rsp]
   011e1	48 89 84 24 b0
 	01 00 00	 mov	 QWORD PTR $T25[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 137  : 	debugBoxSize = VectorByScalar(oneVector, .03f);
 
@@ -2189,7 +2189,7 @@ $LN30@SceneInit:
 	00 00		 mov	 rax, QWORD PTR oneVector
   0121f	48 89 84 24 c8
 	01 00 00	 mov	 QWORD PTR vector$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 61   : 	Vector2 _this = { vector.x * scalar, vector.y * scalar };
 
@@ -2212,7 +2212,7 @@ $LN30@SceneInit:
 	01 00 00	 mov	 rax, QWORD PTR _this$27[rsp]
   01263	48 89 84 24 b8
 	01 00 00	 mov	 QWORD PTR $T26[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 140  : 	debugBoxSize = VectorByScalar(oneVector, .03f);
 
@@ -2332,29 +2332,29 @@ $LN33@SceneInit:
 SceneInit ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 _TEXT	SEGMENT
 allNull$18 = 32
 i$19 = 36
@@ -2414,7 +2414,7 @@ $LN77:
   00013	b8 cc cc cc cc	 mov	 eax, -858993460		; ccccccccH
   00018	f3 ab		 rep stosd
   0001a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00021	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 195  : 	changeInPos = avgDT * enemyAccel;
@@ -2489,7 +2489,7 @@ $LN11@SceneUpdat:
 	00 00		 mov	 rax, QWORD PTR upVector
   000c7	48 89 84 24 28
 	02 00 00	 mov	 QWORD PTR vector$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 61   : 	Vector2 _this = { vector.x * scalar, vector.y * scalar };
 
@@ -2511,7 +2511,7 @@ $LN11@SceneUpdat:
   00103	48 8b 84 24 48
 	02 00 00	 mov	 rax, QWORD PTR _this$37[rsp]
   0010b	48 89 44 24 30	 mov	 QWORD PTR $T22[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 201  : 		healthBarPos = AddVectors(curTransform->position, VectorByScalar(upVector, healthBarYOffset));
 
@@ -2523,7 +2523,7 @@ $LN11@SceneUpdat:
   00124	48 8b 40 0c	 mov	 rax, QWORD PTR [rax+12]
   00128	48 89 84 24 c8
 	01 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 35   : 	_this.x = lhs.x + rhs.x;
 
@@ -2548,7 +2548,7 @@ $LN11@SceneUpdat:
   00166	48 8b 84 24 08
 	02 00 00	 mov	 rax, QWORD PTR _this$36[rsp]
   0016e	48 89 44 24 38	 mov	 QWORD PTR $T23[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 201  : 		healthBarPos = AddVectors(curTransform->position, VectorByScalar(upVector, healthBarYOffset));
 
@@ -2879,7 +2879,7 @@ $LN12@SceneUpdat:
   00472	48 8b 40 0c	 mov	 rax, QWORD PTR [rax+12]
   00476	48 89 84 24 68
 	01 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 41   : 	_this.x = lhs.x - rhs.x;
 
@@ -2904,14 +2904,14 @@ $LN12@SceneUpdat:
   004b4	48 8b 84 24 a8
 	01 00 00	 mov	 rax, QWORD PTR _this$35[rsp]
   004bc	48 89 44 24 40	 mov	 QWORD PTR $T24[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 236  : 		if (SqrMagnitude(TakeVectors(playerData->transform.position, curTransform->position)) <= attkDst) {
 
   004c1	48 8b 44 24 40	 mov	 rax, QWORD PTR $T24[rsp]
   004c6	48 89 84 24 48
 	01 00 00	 mov	 QWORD PTR vector$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 125  : 	return vector.x * vector.x + vector.y * vector.y;
 
@@ -2926,7 +2926,7 @@ $LN12@SceneUpdat:
   004f2	f3 0f 58 c1	 addss	 xmm0, xmm1
   004f6	f3 0f 11 44 24
 	48		 movss	 DWORD PTR $T25[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 236  : 		if (SqrMagnitude(TakeVectors(playerData->transform.position, curTransform->position)) <= attkDst) {
 
@@ -3019,7 +3019,7 @@ $LN30@SceneUpdat:
 	00 00		 mov	 rax, QWORD PTR curAnim
   005e1	48 89 84 24 38
 	01 00 00	 mov	 QWORD PTR anim$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\animations.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.h
 
 ; 27   : 	anim->curAnimFrame = -1;
 
@@ -3027,7 +3027,7 @@ $LN30@SceneUpdat:
   005ee	48 8b 8c 24 38
 	01 00 00	 mov	 rcx, QWORD PTR anim$[rsp]
   005f6	66 89 41 0a	 mov	 WORD PTR [rcx+10], ax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 241  : 				SetColliderAABB(enemyAttkColPts[curEnemyIndex], enemyAttkColOffsets, data);
 
@@ -3101,7 +3101,7 @@ $LN10@SceneUpdat:
   006cf	48 8b 40 04	 mov	 rax, QWORD PTR [rax+4]
   006d3	48 89 84 24 e8
 	00 00 00	 mov	 QWORD PTR a$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 107  : 	_this.x = a.x * b.x;
 
@@ -3126,7 +3126,7 @@ $LN10@SceneUpdat:
   00711	48 8b 84 24 28
 	01 00 00	 mov	 rax, QWORD PTR _this$34[rsp]
   00719	48 89 44 24 50	 mov	 QWORD PTR $T26[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 244  : 				for (uint i = 0; i < NUM_VEC2_AABB; i++) MoveScaleMesh(debugMesh[i].meshLocation, AddVectors(data->transform.position, VectorMult(data->transform.scale, enemyAttkColOffsets[i])), debugBoxSize);
 
@@ -3138,7 +3138,7 @@ $LN10@SceneUpdat:
   00732	48 8b 40 0c	 mov	 rax, QWORD PTR [rax+12]
   00736	48 89 84 24 88
 	00 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 35   : 	_this.x = lhs.x + rhs.x;
 
@@ -3163,7 +3163,7 @@ $LN10@SceneUpdat:
   00774	48 8b 84 24 c8
 	00 00 00	 mov	 rax, QWORD PTR _this$33[rsp]
   0077c	48 89 44 24 58	 mov	 QWORD PTR $T27[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 244  : 				for (uint i = 0; i < NUM_VEC2_AABB; i++) MoveScaleMesh(debugMesh[i].meshLocation, AddVectors(data->transform.position, VectorMult(data->transform.scale, enemyAttkColOffsets[i])), debugBoxSize);
 
@@ -3236,7 +3236,7 @@ $LN33@SceneUpdat:
   00825	c7 44 24 60 01
 	00 00 00	 mov	 DWORD PTR $T28[rsp], 1
 $LN34@SceneUpdat:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 99   : 	return b * 2.f - 1.f;
 
@@ -3248,7 +3248,7 @@ $LN34@SceneUpdat:
 	00 00 00	 subss	 xmm0, DWORD PTR __real@3f800000
   00846	f3 0f 11 44 24
 	64		 movss	 DWORD PTR $T29[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 251  : 		directionX = BoolToSign(playerData->transform.position.x < curTransform->position.x);
 
@@ -3279,7 +3279,7 @@ $LN34@SceneUpdat:
 	00 00 00	 addss	 xmm0, DWORD PTR forceToAdd
   00894	f3 0f 11 44 24
 	78		 movss	 DWORD PTR orig$[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -3309,7 +3309,7 @@ $LN62@SceneUpdat:
   008e4	0f 28 c1	 movaps	 xmm0, xmm1
   008e7	f3 0f 11 44 24
 	68		 movss	 DWORD PTR $T30[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 254  : 		AddForceScaleLimitVelX(*data, *curTransform, forceToAdd * (FAbs(data->velocity.x + forceToAdd) < enemySpeed), directionX * origEnemyScale.x, enemySpeed);
 
@@ -3355,7 +3355,7 @@ $LN37@SceneUpdat:
 	00 00 00 00 00
 	00		 mov	 DWORD PTR tv339[rsp], 0
 $LN38@SceneUpdat:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -3385,7 +3385,7 @@ $LN66@SceneUpdat:
   009ba	0f 28 c1	 movaps	 xmm0, xmm1
   009bd	f3 0f 11 44 24
 	6c		 movss	 DWORD PTR $T31[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 254  : 		AddForceScaleLimitVelX(*data, *curTransform, forceToAdd * (FAbs(data->velocity.x + forceToAdd) < enemySpeed), directionX * origEnemyScale.x, enemySpeed);
 
@@ -3498,7 +3498,7 @@ $LN42@SceneUpdat:
   00ae8	85 c0		 test	 eax, eax
   00aea	0f 84 89 00 00
 	00		 je	 $LN21@SceneUpdat
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 
 ; 343  : 	QueryPerformanceCounter(&cTime);
 
@@ -3527,7 +3527,7 @@ $LN42@SceneUpdat:
 	00 00 00	 mulss	 xmm0, DWORD PTR timeScale
   00b36	f3 0f 11 44 24
 	70		 movss	 DWORD PTR $T32[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 
 ; 262  : 		glUniform1f(GetLocVal2("u_elapsedT"), elapsedTime += deltaTime());
 
@@ -3570,7 +3570,7 @@ $LN21@SceneUpdat:
 SceneUpdate ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\scene 1.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c
 _TEXT	SEGMENT
 curEntity$ = 32
 data$ = 40
@@ -3601,7 +3601,7 @@ $LN6:
   00024	48 89 84 24 d0
 	00 00 00	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   0002c	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00033	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 157  : 	//TODO: turn this into a func.
@@ -3883,7 +3883,7 @@ $LN3@TerrainIni:
 TerrainInit ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 ;	COMDAT RandInt
 _TEXT	SEGMENT
 tv64 = 32
@@ -3900,7 +3900,7 @@ $LN3:
   00008	57		 push	 rdi
   00009	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000d	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__E0493894_main@h
+	00 00		 lea	 rcx, OFFSET FLAT:__DD0D2CA2_main@h
   00014	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 380  : 	return (int)(min + (max - min) * ((double)rand() / (double)RAND_MAX));
@@ -3939,7 +3939,7 @@ $LN3:
 RandInt	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 ;	COMDAT RandFloat
 _TEXT	SEGMENT
 tv65 = 48
@@ -3957,7 +3957,7 @@ $LN3:
   0000c	57		 push	 rdi
   0000d	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   00011	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__E0493894_main@h
+	00 00		 lea	 rcx, OFFSET FLAT:__DD0D2CA2_main@h
   00018	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 383  : 	return min + (max - min) * (float)rand() / (float)RAND_MAX;
@@ -3990,7 +3990,7 @@ $LN3:
 RandFloat ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 ;	COMDAT DefaultAnimTexCoordPts
 _TEXT	SEGMENT
 numFrames$ = 32
@@ -4019,7 +4019,7 @@ $LN6:
   00017	57		 push	 rdi
   00018	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   0001c	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__E0493894_main@h
+	00 00		 lea	 rcx, OFFSET FLAT:__DD0D2CA2_main@h
   00023	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 390  : 	ushort numFrames = noOfFrames[animIndex];
@@ -4140,7 +4140,7 @@ $LN3@DefaultAni:
 DefaultAnimTexCoordPts ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 ;	COMDAT DefaultAnimTexCoordPts2
 _TEXT	SEGMENT
 numFrames$ = 32
@@ -4169,7 +4169,7 @@ $LN6:
   00017	57		 push	 rdi
   00018	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   0001c	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__E0493894_main@h
+	00 00		 lea	 rcx, OFFSET FLAT:__DD0D2CA2_main@h
   00023	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 401  : 	ushort numFrames = noOfFrames[animIndex];
@@ -4278,7 +4278,7 @@ $LN3@DefaultAni:
 DefaultAnimTexCoordPts2 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 ;	COMDAT BoolToSign
 _TEXT	SEGMENT
 b$ = 64
@@ -4291,7 +4291,7 @@ $LN3:
   00004	57		 push	 rdi
   00005	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00009	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__46B7CB64_math@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7BF3DF52_math@h
   00010	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 99   : 	return b * 2.f - 1.f;

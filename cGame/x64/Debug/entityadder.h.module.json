@@ -6,14 +6,14 @@
             "primary-output": "x64\\Debug\\entityAdder.h.obj",
             "outputs": [
                 "x64\\Debug\\entityAdder.cod",
-                "C:\\Users\\drago\\source\\repos\\cGame - less comments\\cGame\\x64\\Debug\\vc143.pdb",
+                "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\c-game\\cGame\\x64\\Debug\\vc143.pdb",
                 "x64\\Debug\\",
-                "C:\\Users\\drago\\source\\repos\\cGame - less comments\\cGame\\x64\\Debug\\entityAdder.h.ifc"
+                "C:\\Users\\drago\\OneDrive\\Documents\\GitHub\\c-game\\cGame\\x64\\Debug\\entityAdder.h.ifc"
             ],
             "provides": [
                 {
                     "logical-name": "entityAdder.h",
-                    "source-path": "c:\\users\\drago\\source\\repos\\cgame - less comments\\cgame\\entityadder.h",
+                    "source-path": "c:\\users\\drago\\onedrive\\documents\\github\\c-game\\cgame\\entityadder.h",
                     "lookup-method": "absolute"
                 }
             ],

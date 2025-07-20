@@ -20,7 +20,7 @@ __4C2AD0C7_winpackagefamily@h DB 01H
 __9DED9ED1_winapifamily@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__68CEEE37_glew@h DB 01H
+__20F17275_glew@h DB 01H
 __8C83BECC_concurrencysal@h DB 01H
 __608E3340_sal@h DB 01H
 __FB67E29A_vadefs@h DB 01H
@@ -28,7 +28,7 @@ __1D1B619C_vcruntime@h DB 01H
 __735960E1_corecrt@h DB 01H
 __955456CD_stddef@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
+__0A1327A7_glfw3@h DB 01H
 __12FEDF4E_sdkddkver@h DB 01H
 __9BAEE128_excpt@h DB 01H
 __B7B53233_stdarg@h DB 01H
@@ -183,8 +183,8 @@ __11B87C25_Windows@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__CB2DAF9D_Debug@c DB 01H
+__9378A798_Debug@h DB 01H
+__04AA7E10_Debug@c DB 01H
 PUBLIC	glCheckError
 PUBLIC	printMultiThreaded
 pdata	SEGMENT
@@ -200,7 +200,7 @@ $unwind$glCheckError DD 020601H
 $unwind$printMultiThreaded DD 020a01H
 	DD	07006320aH
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Debug.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Debug.c
 _TEXT	SEGMENT
 data$ = 48
 printMultiThreaded PROC
@@ -212,7 +212,7 @@ $LN3:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 9    : 	printf("%s", data);
@@ -234,7 +234,7 @@ $LN3:
 printMultiThreaded ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Debug.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Debug.c
 _TEXT	SEGMENT
 glCheckError PROC
 
@@ -244,7 +244,7 @@ $LN4:
   00000	40 57		 push	 rdi
   00002	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 4    : 	if ((glError = glGetError()) == GL_NO_ERROR) return;

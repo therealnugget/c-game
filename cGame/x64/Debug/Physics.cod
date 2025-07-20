@@ -75,7 +75,7 @@ __4C2AD0C7_winpackagefamily@h DB 01H
 __9DED9ED1_winapifamily@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__13490EC2_glew@h DB 01H
+__5B769280_glew@h DB 01H
 __F2638511_stdbool@h DB 01H
 __8C83BECC_concurrencysal@h DB 01H
 __608E3340_sal@h DB 01H
@@ -84,10 +84,10 @@ __1D1B619C_vcruntime@h DB 01H
 __735960E1_corecrt@h DB 01H
 __955456CD_stddef@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
+__0A1327A7_glfw3@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
+__7570C268_vectors@h DB 01H
 __12FEDF4E_sdkddkver@h DB 01H
 __9BAEE128_excpt@h DB 01H
 __B7B53233_stdarg@h DB 01H
@@ -242,12 +242,12 @@ __11B87C25_Windows@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
-__E0493894_main@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__565DCB0D_animations@h DB 01H
-__294C502B_Mesh@h DB 01H
-__D929D131_Physics@h DB 01H
-__4EFB08B9_Physics@c DB 01H
+__DD0D2CA2_main@h DB 01H
+__9378A798_Debug@h DB 01H
+__29DBA756_animations@h DB 01H
+__1408441D_Mesh@h DB 01H
+__A6D01AF2_Physics@h DB 01H
+__3102C37A_Physics@c DB 01H
 PUBLIC	PhysicsInit
 pdata	SEGMENT
 $pdata$PhysicsInit DD imagerel $LN3
@@ -257,7 +257,7 @@ xdata	SEGMENT
 $unwind$PhysicsInit DD 020601H
 	DD	070023206H
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Physics.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Physics.c
 _TEXT	SEGMENT
 PhysicsInit PROC
 
@@ -267,7 +267,7 @@ $LN3:
   00000	40 57		 push	 rdi
   00002	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 79   : 	logRefreshRate = logf(refreshRate);

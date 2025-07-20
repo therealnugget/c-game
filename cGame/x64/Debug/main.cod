@@ -17,7 +17,7 @@ PUBLIC	??_C@_08IEIKBDDE@fragment@			; `string'
 PUBLIC	??_C@_01EEMJAFIK@?6@				; `string'
 PUBLIC	??_C@_0BN@HPODFHAK@failed?5to?5compile?5?$CFs?5shader?6@ ; `string'
 PUBLIC	??_C@_0BF@LBNLFPA@shader?5is?5broken?6?$CFs?6@	; `string'
-PUBLIC	??_C@_0BB@BOIFLNGG@saves?1save?51?4txt@		; `string'
+PUBLIC	??_C@_0BB@EKFBNKE@saves?1save_1?4txt@		; `string'
 PUBLIC	??_C@_0CF@JPPIGLOJ@?6Loading?5save?5file?5took?5?$CFf?5seco@ ; `string'
 PUBLIC	??_C@_0FN@GDBHHMPF@Hello?0?5my?5name?5is?5Kevin?0?5I?5have@ ; `string'
 PUBLIC	??_C@_0BH@PCNKIOJF@your?5program?5is?5broken@	; `string'
@@ -122,9 +122,9 @@ CONST	SEGMENT
 ??_C@_0CF@JPPIGLOJ@?6Loading?5save?5file?5took?5?$CFf?5seco@ DB 0aH, 'Loa'
 	DB	'ding save file took %f seconds.', 0aH, 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@BOIFLNGG@saves?1save?51?4txt@
+;	COMDAT ??_C@_0BB@EKFBNKE@saves?1save_1?4txt@
 CONST	SEGMENT
-??_C@_0BB@BOIFLNGG@saves?1save?51?4txt@ DB 'saves/save 1.txt', 00H ; `string'
+??_C@_0BB@EKFBNKE@saves?1save_1?4txt@ DB 'saves/save_1.txt', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@LBNLFPA@shader?5is?5broken?6?$CFs?6@
 CONST	SEGMENT
@@ -169,7 +169,7 @@ __4C2AD0C7_winpackagefamily@h DB 01H
 __9DED9ED1_winapifamily@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__68CEEE37_glew@h DB 01H
+__20F17275_glew@h DB 01H
 __8C83BECC_concurrencysal@h DB 01H
 __608E3340_sal@h DB 01H
 __FB67E29A_vadefs@h DB 01H
@@ -177,8 +177,8 @@ __1D1B619C_vcruntime@h DB 01H
 __735960E1_corecrt@h DB 01H
 __955456CD_stddef@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
-__ADED8163_GL stuff@h DB 01H
+__0A1327A7_glfw3@h DB 01H
+__AFFFEBA2_GL stuff@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
@@ -192,7 +192,7 @@ __1FF36214_time@h DB 01H
 __F2638511_stdbool@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
+__7570C268_vectors@h DB 01H
 __12FEDF4E_sdkddkver@h DB 01H
 __9BAEE128_excpt@h DB 01H
 __B7B53233_stdarg@h DB 01H
@@ -339,22 +339,22 @@ __058845F1_mcx@h DB 01H
 __7F16006B_ime_cmodes@h DB 01H
 __0A3AF599_imm@h DB 01H
 __11B87C25_Windows@h DB 01H
-__E0493894_main@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__565DCB0D_animations@h DB 01H
-__D929D131_Physics@h DB 01H
-__294C502B_Mesh@h DB 01H
-__D1DC2946_EntityManager@h DB 01H
-__6969E086_Player@h DB 01H
-__87197C89_files@h DB 01H
-__1F46D782_scene 1@h DB 01H
-__46B7CB64_math@h DB 01H
+__DD0D2CA2_main@h DB 01H
+__9378A798_Debug@h DB 01H
+__29DBA756_animations@h DB 01H
+__A6D01AF2_Physics@h DB 01H
+__1408441D_Mesh@h DB 01H
+__7CA6EAD6_EntityManager@h DB 01H
+__FAAF98CA_Player@h DB 01H
+__489EAD04_files@h DB 01H
+__60BF1C41_scene 1@h DB 01H
+__7BF3DF52_math@h DB 01H
 __260A2221_corecrt_share@h DB 01H
 __EB642103_corecrt_wio@h DB 01H
 __A881FA52_corecrt_io@h DB 01H
 __3BA8B0DC_io@h DB 01H
-__EBE4262C_Dictionary@h DB 01H
-__779BE11C_main@c DB 01H
+__94624A77_Dictionary@h DB 01H
+__4ADFF52A_main@c DB 01H
 $S1	DD	00H
 	DD	01H
 maxNugRand DQ	0000000100000000H
@@ -658,7 +658,7 @@ ParseShader$rtcFrameData DD 03H
 	DD	00H
 	DQ	FLAT:ParseShader$rtcVarDesc
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 _TEXT	SEGMENT
 alloc$ = 48
 strLen$ = 56
@@ -672,7 +672,7 @@ $LN3:
   00009	57		 push	 rdi
   0000a	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000e	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00015	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 210  : 	*alloc = malloc(sizeof(char) * strLen);
@@ -768,7 +768,7 @@ $LN4@strnlen_s:
 strnlen_s ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 ;	COMDAT deltaTime
 _TEXT	SEGMENT
 deltaTime PROC						; COMDAT
@@ -779,7 +779,7 @@ $LN3:
   00000	40 57		 push	 rdi
   00002	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__E0493894_main@h
+	00 00		 lea	 rcx, OFFSET FLAT:__DD0D2CA2_main@h
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 343  : 	QueryPerformanceCounter(&cTime);
@@ -816,7 +816,7 @@ $LN3:
 deltaTime ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Debug.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Debug.h
 _TEXT	SEGMENT
 message$ = 48
 ThrowError PROC
@@ -827,7 +827,7 @@ ThrowError PROC
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__5CFF7615_Debug@h
+	00 00		 lea	 rcx, OFFSET FLAT:__9378A798_Debug@h
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 31   : 	printf("%s\n", message);
@@ -853,7 +853,7 @@ ThrowError PROC
 ThrowError ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 ;	COMDAT pressing
 _TEXT	SEGMENT
 tv69 = 32
@@ -868,7 +868,7 @@ $LN7:
   00004	57		 push	 rdi
   00005	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00009	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00010	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 61   : 	return (GetKeyState(key) | 1) == -127;
@@ -906,11 +906,11 @@ $LN6@pressing:
 pressing ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 ; File C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 ; File C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 _TEXT	SEGMENT
 fptr$ = 40
 singleLine$ = 80
@@ -952,7 +952,7 @@ $LN28:
   00035	48 89 84 24 48
 	01 00 00	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   0003d	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00044	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 76   : 	FILE *fptr = NULL;
@@ -1037,7 +1037,7 @@ $LN22@ParseShade:
 	01 00 00	 mov	 rax, QWORD PTR tv192[rsp]
   000f1	48 89 84 24 20
 	01 00 00	 mov	 QWORD PTR $T6[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 
 ; 87   : 	byte shaderLength = strnlen_s(shader, sizeof(shader));
 
@@ -1158,7 +1158,7 @@ $LN26@ParseShade:
 	01 00 00	 mov	 rax, QWORD PTR tv195[rsp]
   001fb	48 89 84 24 28
 	01 00 00	 mov	 QWORD PTR $T7[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 
 ; 100  : 		lineLen = strnlen_s(singleLine, sizeof(singleLine));
 
@@ -1393,9 +1393,9 @@ $LN6@ParseShade:
 ParseShader ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 ; File C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 _TEXT	SEGMENT
 id$ = 32
 result$ = 52
@@ -1431,7 +1431,7 @@ CompileShader PROC
   00033	48 89 84 24 a8
 	00 00 00	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   0003b	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00042	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 133  : 	unsigned int id = glCreateShader(type);
@@ -1553,7 +1553,7 @@ $LN9@CompileSha:
 	00 00 00	 mov	 rax, QWORD PTR tv148[rsp]
   00165	48 89 84 24 90
 	00 00 00	 mov	 QWORD PTR $T10[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 
 ; 145  : 		char len = strnlen_s(t, sizeof(t)) + 1;
 
@@ -1645,9 +1645,9 @@ $LN1@CompileSha:
 CompileShader ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Debug.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Debug.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 _TEXT	SEGMENT
 program$ = 32
 vs$ = 36
@@ -1676,7 +1676,7 @@ $LN6:
   0002c	48 33 c4	 xor	 rax, rsp
   0002f	48 89 44 24 58	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   00034	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0003b	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 158  : 	unsigned int program = glCreateProgram();
@@ -1771,7 +1771,7 @@ $LN6:
   00108	48 8d 0d 00 00
 	00 00		 lea	 rcx, OFFSET FLAT:??_C@_0BF@LBNLFPA@shader?5is?5broken?6?$CFs?6@
   0010f	e8 00 00 00 00	 call	 printf
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Debug.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Debug.h
 
 ; 31   : 	printf("%s\n", message);
 
@@ -1787,7 +1787,7 @@ $LN6:
   00127	ff 15 00 00 00
 	00		 call	 QWORD PTR __imp_DebugBreak
   0012d	90		 npad	 1
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 
 ; 172  : 		return 0;
 
@@ -1839,7 +1839,7 @@ $LN1@CreateShad:
 CreateShader ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 ;	COMDAT ChangeFullScreen
 _TEXT	SEGMENT
 tv74 = 64
@@ -1852,7 +1852,7 @@ $LN8:
   00000	40 57		 push	 rdi
   00002	48 83 ec 50	 sub	 rsp, 80			; 00000050H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 180  : 	static bool fullScreen;
@@ -1924,7 +1924,7 @@ $LN7@ChangeFull:
 ChangeFullScreen ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 ;	COMDAT SetFullScreen
 _TEXT	SEGMENT
 tv74 = 64
@@ -1938,7 +1938,7 @@ $LN5:
   00004	57		 push	 rdi
   00005	48 83 ec 50	 sub	 rsp, 80			; 00000050H
   00009	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00010	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 186  : 	glfwSetWindowMonitor(window, fullScreen ? monitor : NULL, 0, 0, mode->width, mode->height, mode->refreshRate);
@@ -1990,7 +1990,7 @@ $LN4@SetFullScr:
 SetFullScreen ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 _TEXT	SEGMENT
 si$ = 96
 pi$ = 232
@@ -2016,7 +2016,7 @@ OpenFileUnsafe PROC
   00030	48 89 84 24 10
 	01 00 00	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   00038	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0003f	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 199  : 	STARTUPINFO si = { sizeof(STARTUPINFO) };
@@ -2085,7 +2085,7 @@ OpenFileUnsafe PROC
 OpenFileUnsafe ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 _TEXT	SEGMENT
 dst$ = 48
 cnt$ = 56
@@ -2099,7 +2099,7 @@ $LN3:
   0000a	57		 push	 rdi
   0000b	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 207  : 	*dst = malloc(sizeof(void **) * cnt);
@@ -2123,7 +2123,7 @@ $LN3:
 AllocPtrPtr ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c
 _TEXT	SEGMENT
 frequencyHolder$6 = 56
 save$7 = 72
@@ -2166,7 +2166,7 @@ $LN58:
   00024	48 89 84 24 f8
 	00 00 00	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   0002c	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00033	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 225  : 	stbi_set_flip_vertically_on_load(1);
@@ -2204,11 +2204,11 @@ $LN58:
   00070	ff 15 00 00 00
 	00		 call	 QWORD PTR __imp_QueryPerformanceCounter
 
-; 232  : 		char* save = ReadSaveFile("saves/save 1.txt", SAVE_FILE_MAX_LINE_CHAR);
+; 232  : 		char* save = ReadSaveFile("saves/save_1.txt", SAVE_FILE_MAX_LINE_CHAR);
 
   00076	ba ee 02 00 00	 mov	 edx, 750		; 000002eeH
   0007b	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:??_C@_0BB@BOIFLNGG@saves?1save?51?4txt@
+	00 00		 lea	 rcx, OFFSET FLAT:??_C@_0BB@EKFBNKE@saves?1save_1?4txt@
   00082	e8 00 00 00 00	 call	 ReadSaveFile
   00087	48 89 44 24 48	 mov	 QWORD PTR save$7[rsp], rax
 

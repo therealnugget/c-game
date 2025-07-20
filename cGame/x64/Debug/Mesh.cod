@@ -170,7 +170,7 @@ __4C2AD0C7_winpackagefamily@h DB 01H
 __9DED9ED1_winapifamily@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__68CEEE37_glew@h DB 01H
+__20F17275_glew@h DB 01H
 __F2638511_stdbool@h DB 01H
 __8C83BECC_concurrencysal@h DB 01H
 __608E3340_sal@h DB 01H
@@ -179,10 +179,10 @@ __1D1B619C_vcruntime@h DB 01H
 __735960E1_corecrt@h DB 01H
 __955456CD_stddef@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
+__0A1327A7_glfw3@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
+__7570C268_vectors@h DB 01H
 __12FEDF4E_sdkddkver@h DB 01H
 __9BAEE128_excpt@h DB 01H
 __B7B53233_stdarg@h DB 01H
@@ -337,15 +337,15 @@ __11B87C25_Windows@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
-__E0493894_main@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__565DCB0D_animations@h DB 01H
-__D929D131_Physics@h DB 01H
-__294C502B_Mesh@h DB 01H
-__D1DC2946_EntityManager@h DB 01H
-__EBE4262C_Dictionary@h DB 01H
-__46B7CB64_math@h DB 01H
-__BE9E89A3_Mesh@c DB 01H
+__DD0D2CA2_main@h DB 01H
+__9378A798_Debug@h DB 01H
+__29DBA756_animations@h DB 01H
+__A6D01AF2_Physics@h DB 01H
+__1408441D_Mesh@h DB 01H
+__7CA6EAD6_EntityManager@h DB 01H
+__94624A77_Dictionary@h DB 01H
+__7BF3DF52_math@h DB 01H
+__83DA9D95_Mesh@c DB 01H
 texcoordTemplate DD 000000000r			; 0
 	DD	000000000r			; 0
 	DD	03f800000r			; 1
@@ -661,7 +661,7 @@ MeshStartup$rtcFrameData DD 03H
 	DD	00H
 	DQ	FLAT:MeshStartup$rtcVarDesc
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 vbo$ = 52
 vertexSize$ = 72
@@ -689,7 +689,7 @@ $LN3:
   00025	48 89 84 24 b0
 	00 00 00	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   0002d	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00034	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 127  : 	printf("version %s\n", glGetString(GL_VERSION));
@@ -1004,7 +1004,7 @@ $LN3:
 MeshStartup ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 MeshInitialize PROC
 
@@ -1014,7 +1014,7 @@ $LN3:
   00000	40 57		 push	 rdi
   00002	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 118  : 	indTempSize = sizeof(indiciesTemplate);
@@ -1065,7 +1065,7 @@ $LN3:
 MeshInitialize ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 ;	COMDAT I_InRange
 _TEXT	SEGMENT
 tv66 = 32
@@ -1084,7 +1084,7 @@ $LN7:
   0000d	57		 push	 rdi
   0000e	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00012	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__46B7CB64_math@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7BF3DF52_math@h
   00019	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 87   : 	return i < max && i > min;
@@ -1121,7 +1121,7 @@ $LN6@I_InRange:
 I_InRange ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 this$ = 32
 CreateQuad PROC
@@ -1132,7 +1132,7 @@ $LN4:
   00000	40 57		 push	 rdi
   00002	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 53   : 	Mesh *this = malloc(sizeof(Mesh));
@@ -1269,7 +1269,7 @@ $LN1@CreateQuad:
 CreateQuad ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 mesh$ = 48
 CreateQuadAssign PROC
@@ -1281,7 +1281,7 @@ $LN4:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 68   : 	if (delMeshLen != 0) {
@@ -1406,7 +1406,7 @@ $LN1@CreateQuad:
 CreateQuadAssign ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 mesh$ = 48
 CreateSQuadAssign PROC
@@ -1418,7 +1418,7 @@ $LN4:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 81   : 	if (delMeshLen != 0) {
@@ -1543,7 +1543,7 @@ $LN1@CreateSQua:
 CreateSQuadAssign ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 meshLoc$ = 32
 tv68 = 40
@@ -1557,7 +1557,7 @@ $LN3:
   00005	57		 push	 rdi
   00006	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 94   : 	uint meshLoc = mesh->meshLocation;
@@ -1656,7 +1656,7 @@ $LN3:
 DeleteQuad ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 meshLoc$ = 32
 tv68 = 40
@@ -1670,7 +1670,7 @@ $LN3:
   00005	57		 push	 rdi
   00006	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 104  : 	uint meshLoc = mesh->meshLocation;
@@ -1769,7 +1769,7 @@ $LN3:
 DeleteSQuad ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 ;	COMDAT GetOrigVertex
 _TEXT	SEGMENT
 vertex$ = 48
@@ -1782,7 +1782,7 @@ $LN3:
   00004	57		 push	 rdi
   00005	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   00009	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00010	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 114  : 	return vertex - vertex / stride * (stride - 2);
@@ -1807,7 +1807,7 @@ $LN3:
 GetOrigVertex ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 i$ = 32
 index$ = 36
@@ -1827,7 +1827,7 @@ $LN10:
   0000b	57		 push	 rdi
   0000c	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   00010	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00017	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   0001c	90		 npad	 1
 
@@ -1957,7 +1957,7 @@ $LN6@defaultMes:
 defaultMesh ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 i$ = 32
 meshLoc$ = 36
@@ -1973,7 +1973,7 @@ $LN6:
   0000a	57		 push	 rdi
   0000b	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 173  : 	uint i, meshLoc = mesh->meshLocation;
@@ -2038,7 +2038,7 @@ $LN3@ChangeTexI:
 ChangeTexInd ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 i$ = 32
 meshLoc$ = 36
@@ -2055,7 +2055,7 @@ $LN6:
   0000b	57		 push	 rdi
   0000c	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00010	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00017	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 179  : 	uint i, meshLoc = mesh->meshLocation;
@@ -2110,7 +2110,7 @@ $LN3@ChangeTexI:
 ChangeTexInd2 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 i$ = 32
 index$ = 36
@@ -2130,7 +2130,7 @@ $LN10:
   0000b	57		 push	 rdi
   0000c	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   00010	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00017	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   0001c	90		 npad	 1
 
@@ -2287,7 +2287,7 @@ $LN6@defaultSMe:
 defaultSMesh ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 i$ = 32
 index$ = 36
@@ -2308,7 +2308,7 @@ $LN11:
   0000b	57		 push	 rdi
   0000c	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   00010	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00017	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   0001c	90		 npad	 1
 
@@ -2460,7 +2460,7 @@ $LN6@DefaultMes:
 DefaultMeshNotPos ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 i$ = 32
 isModFive$ = 36
@@ -2495,7 +2495,7 @@ $LN20:
   00010	57		 push	 rdi
   00011	48 83 ec 70	 sub	 rsp, 112		; 00000070H
   00015	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0001c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   00021	90		 npad	 1
 
@@ -2836,7 +2836,7 @@ $LN6@defaultMes:
 defaultMeshWithColor ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 isModFive$ = 32
 isModSix$ = 36
@@ -2869,7 +2869,7 @@ $LN18:
   00009	57		 push	 rdi
   0000a	48 83 ec 70	 sub	 rsp, 112		; 00000070H
   0000e	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00015	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 254  : 	colorBoilerPlate;
@@ -3100,7 +3100,7 @@ $LN3@ChangeMesh:
 ChangeMeshColor ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 isStride$ = 32
 notStride$ = 36
@@ -3122,7 +3122,7 @@ $LN10:
   0000b	57		 push	 rdi
   0000c	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   00010	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00017	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 265  : 	float isStride;
@@ -3268,7 +3268,7 @@ $LN3@SquishMesh:
 SquishMeshX2 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 isStride$ = 32
 notStride$ = 36
@@ -3287,7 +3287,7 @@ $LN10:
   00005	57		 push	 rdi
   00006	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 276  : 	float isStride;
@@ -3426,7 +3426,7 @@ $LN3@SquishMesh:
 SquishMeshX ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 tv69 = 48
 vec$ = 80
@@ -3441,7 +3441,7 @@ $LN5:
   0000a	57		 push	 rdi
   0000b	48 83 ec 40	 sub	 rsp, 64			; 00000040H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 287  : 	return vec.y * index + vec.x * (float)!index;
@@ -3478,7 +3478,7 @@ $LN4@vecIndex:
 vecIndex ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 i$ = 32
 index$ = 36
@@ -3512,7 +3512,7 @@ $LN20:
   00026	48 8b 8c 24 80
 	00 00 00	 mov	 rcx, QWORD PTR [rsp+128]
   0002e	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00035	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   0003a	90		 npad	 1
 
@@ -3759,7 +3759,7 @@ $LN6@DefaultAtl:
 DefaultAtlasMesh ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 i$ = 32
 index$ = 36
@@ -3799,7 +3799,7 @@ $LN24:
   0002e	48 8b 8c 24 90
 	00 00 00	 mov	 rcx, QWORD PTR [rsp+144]
   00036	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0003d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   00042	90		 npad	 1
 
@@ -4080,7 +4080,7 @@ $LN6@DefaultAtl:
 DefaultAtlasMesh2 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 $T1 = 32
 meshLoc$ = 64
@@ -4099,7 +4099,7 @@ $LN8:
   00010	57		 push	 rdi
   00011	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00015	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0001c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   00021	90		 npad	 1
 
@@ -4172,7 +4172,7 @@ $LN3@MoveScaleM:
 MoveScaleMeshX ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 $T1 = 32
 meshLoc$ = 64
@@ -4191,7 +4191,7 @@ $LN8:
   00010	57		 push	 rdi
   00011	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00015	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0001c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   00021	90		 npad	 1
 
@@ -4264,7 +4264,7 @@ $LN3@MoveScaleM:
 MoveScaleMeshY ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 $T1 = 32
 meshLoc$ = 64
@@ -4280,7 +4280,7 @@ $LN8:
   0000a	57		 push	 rdi
   0000b	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   0001b	90		 npad	 1
 
@@ -4351,7 +4351,7 @@ $LN3@MoveMeshX:
 MoveMeshX ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 $T1 = 32
 meshLoc$ = 64
@@ -4367,7 +4367,7 @@ $LN8:
   0000a	57		 push	 rdi
   0000b	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   0001b	90		 npad	 1
 
@@ -4438,7 +4438,7 @@ $LN3@MoveMeshY:
 MoveMeshY ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 indRight$ = 32
 indLeft$ = 36
@@ -4458,7 +4458,7 @@ $LN8:
   0000e	57		 push	 rdi
   0000f	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00013	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0001a	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 368  : 	float indRight = 0;
@@ -4589,7 +4589,7 @@ $LN3@MoveScaleM:
 MoveScaleMesh ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 indRight$ = 32
 indLeft$ = 36
@@ -4606,7 +4606,7 @@ $LN8:
   00009	57		 push	 rdi
   0000a	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000e	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00015	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   0001a	90		 npad	 1
 
@@ -4717,7 +4717,7 @@ $LN3@MoveMeshTo:
 MoveMeshTo ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 indRight$ = 32
 meshLoc$ = 64
@@ -4736,7 +4736,7 @@ $LN6:
   00010	57		 push	 rdi
   00011	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   00015	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0001c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 387  : 	char indRight = 0;
@@ -4813,7 +4813,7 @@ $LN3@ScaleMesh:
 ScaleMesh ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 meshLoc$ = 48
 scaleX$ = 56
@@ -4828,7 +4828,7 @@ $LN6:
   0000a	57		 push	 rdi
   0000b	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
   0001b	90		 npad	 1
 
@@ -4879,7 +4879,7 @@ $LN3@ScaleMeshX:
 ScaleMeshX ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 indRight$ = 32
 meshLoc$ = 64
@@ -4895,7 +4895,7 @@ $LN6:
   0000a	57		 push	 rdi
   0000b	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 396  : 	char indRight = NULL;
@@ -4949,11 +4949,11 @@ $LN3@ScaleMeshY:
 ScaleMeshY ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 _TEXT	SEGMENT
 left$ = 32
 i$1 = 36
@@ -4975,7 +4975,7 @@ $LN18:
   0000a	57		 push	 rdi
   0000b	48 83 ec 50	 sub	 rsp, 80			; 00000050H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 401  : 	bool left = true;
@@ -5047,20 +5047,20 @@ $LN11@ChangeTexC:
   000c6	6b 05 00 00 00
 	00 03		 imul	 eax, DWORD PTR stride, 3
   000cd	ff c8		 dec	 eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 87   : 	return i < max && i > min;
 
   000cf	39 44 24 24	 cmp	 DWORD PTR i$1[rsp], eax
   000d3	7d 18		 jge	 SHORT $LN14@ChangeTexC
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 
 ; 403  : 		vertices[i + mesh->meshLocation] = Branch(newVertices[I_InRange(i, stride - 1, stride * 3 - 1)].x, newVertices[i > (stride * 2 - 1)].y, left);
 
   000d5	8b 05 00 00 00
 	00		 mov	 eax, DWORD PTR stride
   000db	ff c8		 dec	 eax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 87   : 	return i < max && i > min;
 
@@ -5084,7 +5084,7 @@ $LN16@ChangeTexC:
 $LN17@ChangeTexC:
   0010e	0f b6 44 24 40	 movzx	 eax, BYTE PTR tv147[rsp]
   00113	88 44 24 28	 mov	 BYTE PTR $T2[rsp], al
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c
 
 ; 403  : 		vertices[i + mesh->meshLocation] = Branch(newVertices[I_InRange(i, stride - 1, stride * 3 - 1)].x, newVertices[i > (stride * 2 - 1)].y, left);
 

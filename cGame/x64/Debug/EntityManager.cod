@@ -210,25 +210,25 @@ __0A3AF599_imm@h DB 01H
 __11B87C25_Windows@h DB 01H
 __0B1C67B3_gl@h DB 01H
 __D7C03EE9_glu@h DB 01H
-__13490EC2_glew@h DB 01H
+__5B769280_glew@h DB 01H
 __F2638511_stdbool@h DB 01H
 __836A8CFC_stdint@h DB 01H
-__129F966A_glfw3@h DB 01H
+__0A1327A7_glfw3@h DB 01H
 __1D9A7FA2_corecrt_math@h DB 01H
 __2E93F1C0_math@h DB 01H
-__0A8909AB_vectors@h DB 01H
+__7570C268_vectors@h DB 01H
 __60B45B40_corecrt_stdio_config@h DB 01H
 __CFA3741E_corecrt_wstdio@h DB 01H
 __B3FE3303_stdio@h DB 01H
-__E0493894_main@h DB 01H
-__5CFF7615_Debug@h DB 01H
-__565DCB0D_animations@h DB 01H
-__D929D131_Physics@h DB 01H
-__294C502B_Mesh@h DB 01H
-__D1DC2946_EntityManager@h DB 01H
-__46B7CB64_math@h DB 01H
-__901F82D0_player@h DB 01H
-__460EF0CE_EntityManager@c DB 01H
+__DD0D2CA2_main@h DB 01H
+__9378A798_Debug@h DB 01H
+__29DBA756_animations@h DB 01H
+__A6D01AF2_Physics@h DB 01H
+__1408441D_Mesh@h DB 01H
+__7CA6EAD6_EntityManager@h DB 01H
+__7BF3DF52_math@h DB 01H
+__03D9FA9C_player@h DB 01H
+__EB74335E_EntityManager@c DB 01H
 $S1	DD	00H
 	DD	01H
 CONST	ENDS
@@ -622,7 +622,7 @@ UpdateEntities$rtcFrameData DD 0bH
 	DQ	FLAT:UpdateEntities$rtcVarDesc
 CONST	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 _TEXT	SEGMENT
 UpdateSquishables PROC
 
@@ -632,7 +632,7 @@ $LN6:
   00000	40 57		 push	 rdi
   00002	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 403  : 	curSquishable = squishHead;
@@ -702,27 +702,27 @@ $LN3@UpdateSqui:
 UpdateSquishables ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 _TEXT	SEGMENT
 temp$14 = 32
 temp2$15 = 36
@@ -800,7 +800,7 @@ $LN210:
   00013	b8 cc cc cc cc	 mov	 eax, -858993460		; ccccccccH
   00018	f3 ab		 rep stosd
   0001a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00021	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 179  : 	plrGrounded = false;//removed mt code because it made searching annoying. it's bound to be in a previous version on one of my pcs somewhere but if it gets lost don't worry, it's absolute trash anyway. the code i did for the much newer multithreaded quadtree collision solver i wrote in c++ is much better and actually works.
@@ -901,7 +901,7 @@ $LN91@UpdateEnti:
   0011d	c6 40 01 01	 mov	 BYTE PTR [rax+1], 1
   00121	c6 05 00 00 00
 	00 01		 mov	 BYTE PTR shouldDraw, 1
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 
 ; 343  : 	QueryPerformanceCounter(&cTime);
 
@@ -930,7 +930,7 @@ $LN91@UpdateEnti:
 	00 00 00	 mulss	 xmm0, DWORD PTR timeScale
   0016e	f3 0f 11 44 24
 	3c		 movss	 DWORD PTR $T18[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 189  : 			AddVectorsAssign(&curData->transform.position, VectorByScalar(curData->velocity, INV_SOLVE_ITTER_F * deltaTime()));
 
@@ -947,7 +947,7 @@ $LN91@UpdateEnti:
   00199	48 8b 40 48	 mov	 rax, QWORD PTR [rax+72]
   0019d	48 89 84 24 c8
 	01 00 00	 mov	 QWORD PTR vector$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 61   : 	Vector2 _this = { vector.x * scalar, vector.y * scalar };
 
@@ -969,7 +969,7 @@ $LN91@UpdateEnti:
   001db	48 8b 84 24 e8
 	01 00 00	 mov	 rax, QWORD PTR _this$31[rsp]
   001e3	48 89 44 24 40	 mov	 QWORD PTR $T19[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 189  : 			AddVectorsAssign(&curData->transform.position, VectorByScalar(curData->velocity, INV_SOLVE_ITTER_F * deltaTime()));
 
@@ -979,7 +979,7 @@ $LN91@UpdateEnti:
   001f3	48 89 84 24 58
 	01 00 00	 mov	 QWORD PTR lhs$[rsp], rax
   001fb	48 8b 44 24 40	 mov	 rax, QWORD PTR $T19[rsp]
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 52   : 	*lhs = AddVectors(*lhs, rhs);
 
@@ -1022,7 +1022,7 @@ $LN91@UpdateEnti:
 	01 00 00	 mov	 rcx, QWORD PTR lhs$[rsp]
   0026b	48 89 01	 mov	 QWORD PTR [rcx], rax
 $preColSolvCont$211:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 191  : 			advance(curNode);
 
@@ -1083,7 +1083,7 @@ $LN7@UpdateEnti:
   002e7	48 8b 40 1c	 mov	 rax, QWORD PTR [rax+28]
   002eb	48 89 84 24 08
 	01 00 00	 mov	 QWORD PTR lhs$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 35   : 	_this.x = lhs.x + rhs.x;
 
@@ -1108,7 +1108,7 @@ $LN7@UpdateEnti:
   00329	48 8b 84 24 48
 	01 00 00	 mov	 rax, QWORD PTR _this$29[rsp]
   00331	48 89 44 24 50	 mov	 QWORD PTR $T21[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 197  : 				curEntity->midPoint = AddVectors(curEntity->origMidpoint, curData->transform.position);
 
@@ -2284,7 +2284,7 @@ $LN3@UpdateEnti:
 	00 00		 mov	 rax, QWORD PTR entityHead
   00e39	48 89 05 00 00
 	00 00		 mov	 QWORD PTR curNode, rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 
 ; 343  : 	QueryPerformanceCounter(&cTime);
 
@@ -2313,7 +2313,7 @@ $LN3@UpdateEnti:
 	00 00 00	 mulss	 xmm0, DWORD PTR timeScale
   00e86	f3 0f 11 44 24
 	70		 movss	 DWORD PTR $T22[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 307  : 	deltaT = deltaTime();
 
@@ -2827,7 +2827,7 @@ $LN141@UpdateEnti:
 	00 00		 mov	 rax, QWORD PTR curTransform
   01433	48 89 84 24 f0
 	00 00 00	 mov	 QWORD PTR transform$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.h
 
 ; 202  : 	resetScale(transform);
 
@@ -2836,7 +2836,7 @@ $LN141@UpdateEnti:
   01443	0f b7 0d 00 00
 	00 00		 movzx	 ecx, WORD PTR oneBVector
   0144a	66 89 48 02	 mov	 WORD PTR [rax+2], cx
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 327  : 			ResetVertexUpdate(curTransform);
 
@@ -2844,7 +2844,7 @@ $LN141@UpdateEnti:
 	00 00		 mov	 rax, QWORD PTR curTransform
   01455	48 89 84 24 e8
 	00 00 00	 mov	 QWORD PTR transform$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.h
 
 ; 199  : 	resetPos(transform);
 
@@ -2853,7 +2853,7 @@ $LN141@UpdateEnti:
   01465	0f b7 0d 00 00
 	00 00		 movzx	 ecx, WORD PTR zeroBVector
   0146c	66 89 08	 mov	 WORD PTR [rax], cx
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 328  : 			if (posIsZeroVec) {
 
@@ -3016,7 +3016,7 @@ $changeScaleX$217:
   015ba	f3 0f 11 44 24
 	28		 movss	 DWORD PTR size$16[rsp], xmm0
 $LN69@UpdateEnti:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -3072,7 +3072,7 @@ $LN190@UpdateEnti:
   01661	0f 28 c1	 movaps	 xmm0, xmm1
   01664	f3 0f 11 44 24
 	78		 movss	 DWORD PTR $T24[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 346  : 				checkGridSclCoord(curNode->entity, x);
 
@@ -3219,7 +3219,7 @@ $changeScaleY$218:
   017a0	f3 0f 11 44 24
 	2c		 movss	 DWORD PTR size$17[rsp], xmm0
 $LN77@UpdateEnti:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -3275,7 +3275,7 @@ $LN198@UpdateEnti:
   01847	0f 28 c1	 movaps	 xmm0, xmm1
   0184a	f3 0f 11 84 24
 	80 00 00 00	 movss	 DWORD PTR $T26[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 362  : 				checkGridSclCoord(curNode->entity, y);
 
@@ -3539,7 +3539,7 @@ $useTexCoordAnim$219:
   01a9f	48 8b 04 c1	 mov	 rax, QWORD PTR [rcx+rax*8]
   01aa3	48 89 84 24 98
 	00 00 00	 mov	 QWORD PTR a$[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 
 ; 107  : 	_this.x = a.x * b.x;
 
@@ -3565,7 +3565,7 @@ $useTexCoordAnim$219:
 	00 00 00	 mov	 rax, QWORD PTR _this$28[rsp]
   01ae9	48 89 84 24 88
 	00 00 00	 mov	 QWORD PTR $T27[rsp], rax
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 391  : 					MoveScaleMesh(curMesh->meshLocation, curTransform->position, VectorMult(curAnimator->animScales[curAnimInd], curTransform->scale));
 
@@ -3634,13 +3634,13 @@ $LN209@UpdateEnti:
 UpdateEntities ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 _TEXT	SEGMENT
 $T1 = 32
 $T2 = 36
@@ -3656,7 +3656,7 @@ $LN15:
   00000	40 57		 push	 rdi
   00002	48 83 ec 50	 sub	 rsp, 80			; 00000050H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 416  : 	curSliderNode = sliderHead;
@@ -3711,7 +3711,7 @@ $LN4@UpdateSlid:
   00077	f3 0f 5c 41 08	 subss	 xmm0, DWORD PTR [rcx+8]
   0007c	f3 0f 11 44 24
 	38		 movss	 DWORD PTR orig$[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 19   : 	return orig * ((orig >= .0f) * 2.0f - 1.0f);
 
@@ -3739,7 +3739,7 @@ $LN10@UpdateSlid:
   000c3	0f 28 c1	 movaps	 xmm0, xmm1
   000c6	f3 0f 11 44 24
 	20		 movss	 DWORD PTR $T1[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 422  : 		if (FAbs(curSquishMesh->squishAmt - curSlider->pseudoValue) <= curSlider->pseudoDist) {
 
@@ -3767,7 +3767,7 @@ $LN10@UpdateSlid:
   00101	e8 00 00 00 00	 call	 SquishMeshX2
   00106	90		 npad	 1
 $LN5@UpdateSlid:
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 
 ; 343  : 	QueryPerformanceCounter(&cTime);
 
@@ -3796,7 +3796,7 @@ $LN5@UpdateSlid:
 	00 00 00	 mulss	 xmm0, DWORD PTR timeScale
   0014d	f3 0f 11 44 24
 	24		 movss	 DWORD PTR $T2[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 426  : 		SquishMeshX2(curSquishMesh, Lerp(curSquishMesh->squishAmt, curSlider->pseudoValue, deltaTime() * curSlider->decreaseSpd));
 
@@ -3807,7 +3807,7 @@ $LN5@UpdateSlid:
   00160	f3 0f 59 40 0c	 mulss	 xmm0, DWORD PTR [rax+12]
   00165	f3 0f 11 44 24
 	30		 movss	 DWORD PTR t$[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\math.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h
 
 ; 57   : 	return a * (1.0f - t) + b * t;
 
@@ -3828,7 +3828,7 @@ $LN5@UpdateSlid:
   0019e	f3 0f 58 c1	 addss	 xmm0, xmm1
   001a2	f3 0f 11 44 24
 	28		 movss	 DWORD PTR $T3[rsp], xmm0
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 
 ; 426  : 		SquishMeshX2(curSquishMesh, Lerp(curSquishMesh->squishAmt, curSlider->pseudoValue, deltaTime() * curSlider->decreaseSpd));
 
@@ -3863,7 +3863,7 @@ $LN3@UpdateSlid:
 UpdateSliders ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 _TEXT	SEGMENT
 EntityInitialize PROC
 
@@ -3873,7 +3873,7 @@ $LN3:
   00000	40 57		 push	 rdi
   00002	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   00006	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0000d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 147  : 	mainColHead = NULL;
@@ -3904,7 +3904,7 @@ $LN3:
 EntityInitialize ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 _TEXT	SEGMENT
 previous$ = 32
 next$ = 40
@@ -3920,7 +3920,7 @@ $LN5:
   0000a	57		 push	 rdi
   0000b	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 55   : 	Remove(node, head, entityNode);
@@ -3965,7 +3965,7 @@ $ret$6:
 RemoveEntityNode ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 _TEXT	SEGMENT
 previous$ = 32
 next$ = 40
@@ -3981,7 +3981,7 @@ $LN5:
   0000a	57		 push	 rdi
   0000b	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 58   : 	Entity* previous = toRemove->prev, * next = toRemove->next;
@@ -4047,7 +4047,7 @@ $ret$6:
 RemoveEntity ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT GetVectorMidPoint2
 _TEXT	SEGMENT
 $T8 = 32
@@ -4076,7 +4076,7 @@ $LN7:
   00023	48 8b 8c 24 e0
 	00 00 00	 mov	 rcx, QWORD PTR [rsp+224]
   0002b	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__0A8909AB_vectors@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7570C268_vectors@h
   00032	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 65   : 	return VectorByScalar(AddVectors(a, b), .5f);
@@ -4157,7 +4157,7 @@ $LN7:
 GetVectorMidPoint2 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\vectors.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\vectors.h
 ;	COMDAT GetVectorMidPoint
 _TEXT	SEGMENT
 $T8 = 32
@@ -4185,7 +4185,7 @@ $LN9:
   0001e	48 8b 8c 24 f0
 	00 00 00	 mov	 rcx, QWORD PTR [rsp+240]
   00026	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__0A8909AB_vectors@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7570C268_vectors@h
   0002d	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 68   : 	return GetVectorMidPoint2(vecs[0], vecs[1]);
@@ -4287,7 +4287,7 @@ $LN9:
 GetVectorMidPoint ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\main.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.h
 ;	COMDAT limitedDeltaTime2
 _TEXT	SEGMENT
 $T1 = 48
@@ -4306,7 +4306,7 @@ $LN13:
   00006	57		 push	 rdi
   00007	48 83 ec 50	 sub	 rsp, 80			; 00000050H
   0000b	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__E0493894_main@h
+	00 00		 lea	 rcx, OFFSET FLAT:__DD0D2CA2_main@h
   00012	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 343  : 	QueryPerformanceCounter(&cTime);
@@ -4453,7 +4453,7 @@ $LN6@limitedDel:
 limitedDeltaTime2 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.h
 ;	COMDAT ResetVertexUpdate
 _TEXT	SEGMENT
 transform$ = 48
@@ -4466,7 +4466,7 @@ $LN3:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__294C502B_Mesh@h
+	00 00		 lea	 rcx, OFFSET FLAT:__1408441D_Mesh@h
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 199  : 	resetPos(transform);
@@ -4484,7 +4484,7 @@ $LN3:
 ResetVertexUpdate ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\Mesh.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.h
 ;	COMDAT ResetScaleUpdate
 _TEXT	SEGMENT
 transform$ = 48
@@ -4497,7 +4497,7 @@ $LN3:
   00005	57		 push	 rdi
   00006	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__294C502B_Mesh@h
+	00 00		 lea	 rcx, OFFSET FLAT:__1408441D_Mesh@h
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 202  : 	resetScale(transform);
@@ -4515,7 +4515,7 @@ $LN3:
 ResetScaleUpdate ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.h
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.h
 ;	COMDAT RemoveEntAppropriate2
 _TEXT	SEGMENT
 tv75 = 32
@@ -4531,7 +4531,7 @@ $LN6:
   00009	57		 push	 rdi
   0000a	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000e	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__D1DC2946_EntityManager@h
+	00 00		 lea	 rcx, OFFSET FLAT:__7CA6EAD6_EntityManager@h
   00015	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 172  : 	if (position == -1) return;
@@ -4579,7 +4579,7 @@ $LN1@RemoveEntA:
 RemoveEntAppropriate2 ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 _TEXT	SEGMENT
 add$ = 48
 head$ = 56
@@ -4593,7 +4593,7 @@ $LN4:
   0000a	57		 push	 rdi
   0000b	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 70   : 	add->next = *head;
@@ -4634,7 +4634,7 @@ $LN2@InsertAtHe:
 InsertAtHead ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 _TEXT	SEGMENT
 this$ = 48
 add$ = 56
@@ -4648,7 +4648,7 @@ $LN4:
   0000a	57		 push	 rdi
   0000b	48 83 ec 20	 sub	 rsp, 32			; 00000020H
   0000f	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00016	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 76   : 	this->value = add;
@@ -4695,7 +4695,7 @@ $LN2@InsertAtHe:
 InsertAtHeadCellChecks ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 _TEXT	SEGMENT
 previous$ = 32
 next$ = 40
@@ -4709,7 +4709,7 @@ $LN5:
   00005	57		 push	 rdi
   00006	48 83 ec 30	 sub	 rsp, 48			; 00000030H
   0000a	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   00011	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 83   : 	cellChecks* previous = toRemove->prev, * next = toRemove->next;
@@ -4775,7 +4775,7 @@ $ret$6:
 RemoveCellChecks ENDP
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
-; File C:\Users\drago\source\repos\cGame - less comments\cGame\EntityManager.c
+; File C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c
 _TEXT	SEGMENT
 data$ = 32
 pastCellPos$ = 56
@@ -4803,7 +4803,7 @@ $LN13:
   0002d	48 33 c4	 xor	 rax, rsp
   00030	48 89 44 24 78	 mov	 QWORD PTR __$ArrayPad$[rsp], rax
   00035	48 8d 0d 00 00
-	00 00		 lea	 rcx, OFFSET FLAT:__460EF0CE_EntityManager@c
+	00 00		 lea	 rcx, OFFSET FLAT:__EB74335E_EntityManager@c
   0003c	e8 00 00 00 00	 call	 __CheckForDebuggerJustMyCode
 
 ; 95   : 	PhysicsData* data = entity->physicsData;
