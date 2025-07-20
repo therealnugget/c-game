@@ -6,6 +6,7 @@ A few interesting features about this project:
 -  used openGL to render everything
   .  every sprite in the scene is rendered as a quad; the project is limited in that quads cannot be rotated.
   .  the same vertex and fragment shader are shared across every quad in the scene, textureIDs were used to distinguish between world-space and screen-space sprites.
+-  texture atlasing was implemented to drastically increase the number of textures able to be shown on the screen at once, instead of being confined to the usual default 32 texture slots on modern-day machines
 -  64-bit layer-collision matrix
   .  collision events can be handled in behaviours independently of the physics system, which was a problem I realized unity had, which is that in unity, if you want a collider belonging to one layer to ignore a collider belonging to another in terms of physics responses, the two collider's collision event cannot be detected within a behaviour.
 -  dictionaries were created from scratch using a custom hash function, so that the most unique hashes can be outputted for the specific requirements of the project (i.e. whichever strings that I happen to need converted to hashes).
