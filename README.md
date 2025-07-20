@@ -1,7 +1,7 @@
 This is a simple game I wrote in C. I kept the scope relatively small because I didn't use a game engine - just adding collision, physics, rendering, animation, and simple combat behaviour.
 
 A few interesting features about this project:
--  **Batch rendering**
+-  **Batch rendering**<br/>
   .   The entire vertex buffer (which contains every sprite in the scene) is sent to the GPU once per frame instead of calling multiple draw calls, which is more efficient than using multiple batches and is practical seeing as this is a 2D project.
 -  **Used openGL to render everything**
   .  Every sprite in the scene is rendered as a quad; the project is limited in that quads cannot be rotated.
