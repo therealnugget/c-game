@@ -1,4 +1,4 @@
-This is a simple game I wrote in C. I kept the scope relatively small because I didn't use a game engine - just adding collision, physics, rendering, and simple combat behaviour.
+This is a simple game I wrote in C. I kept the scope relatively small because I didn't use a game engine - just adding collision, physics, rendering, animation, and simple combat behaviour.
 
 A few interesting features about this project:
 -  Batch rendering
