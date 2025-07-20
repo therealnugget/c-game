@@ -15,6 +15,7 @@ A few interesting features about this project:
 -  An AABB collision method is used in the physics system, which the project is limited by, because separating axis theorem was not used. Hence, colliders cannot be rotated and only square-square collsions are simulated.
 -  Verlet integration was used for physics simulation
 -  The physics simulation will check if an entity in the scene has moved before it checks collisions, i.e. if no entities have moved since the last frame, physics will not be simulated in the current frame.
+-  An "earthquake" coefficient was added to the shader file to denote how much random noise should be added to each vertex, if the shader effect is needed.
 
 Instructions for executing and playing game:
 The executable for the game is located in "c-game/x64/Debug/cGame.exe". WASD to move, space to attack.
