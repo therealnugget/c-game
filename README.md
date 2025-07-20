@@ -4,7 +4,7 @@ A few interesting features about this project:
 -  **Batch rendering**<br/>
     - The entire vertex buffer (which contains every sprite in the scene) is sent to the GPU once per frame instead of calling multiple draw calls, which is more efficient than using multiple batches and is practical seeing as this is a 2D project.
 -  **Used openGL to render everything**<br/>
-    -  Every sprite in the scene is rendered as a quad; the project is limited in that quads cannot be rotated.
+    -  Every sprite in the scene is rendered as a quad; the project is limited in that a feature has not been added to allow quads to rotate.
     -  The same vertex and fragment shader are shared across every quad in the scene, textureIDs were used to distinguish between world-space and screen-space sprites.
 -  **Texture atlasing was implemented**<br/>
     -  Drastically increases the number of textures able to be shown on the screen at once, instead of being confined to the usual default 32 texture slots on modern-day machines.
