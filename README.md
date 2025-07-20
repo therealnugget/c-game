@@ -18,4 +18,5 @@ A few interesting features about this project:
 -  An "earthquake" coefficient was added to the shader file to denote how much random noise should be added to each vertex, if the shader effect is needed.
 
 Instructions for executing and playing game:
-The executable for the game is located in "c-game/x64/Debug/cGame.exe". WASD to move, space to attack.
+
+The executable for the game is located in "c-game/x64/Debug/cGame.exe". Alternatively, you can open "cGame.sln" in microsoft visual studio and run the game by pressing "f5". The controls are WASD to move, space to attack.
