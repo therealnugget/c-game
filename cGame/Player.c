@@ -278,7 +278,7 @@ void PlayerUpdate() {
 		if (movingX) {
 			StartAnim(plrAnim, walk + pressingKey[VK_LSHIFT]);
 		}
-		else if (idleTransImminent && (plrAnim->curAnimFrame != plrAnim->animFrameNo[idleTransition] - 1 || plrAnim->animating != idleTransition)) {//TODO: fix
+		else if (idleTransImminent && (plrAnim->curAnimFrame != plrAnim->animFrameNo[idleTransition] - 1 || plrAnim->animating != idleTransition)) {
 			StartAnim(plrAnim, idleTransition);
 		}
 		else {
