@@ -1,23 +1,158 @@
-﻿  Player.c
-  entityAdder.c
+﻿  animations.c
+  collisions.c
+  Debug.c
+  Dictionary.c
+  files.c
+  main.c
+  math.c
+  Mesh.c
+  Physics.c
+  Player.c
   scene 1.c
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition (compiling source file Player.c)
-C:\Users\drago\source\repos\cGame\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,1): message : see previous definition of 'APIENTRY' (compiling source file Player.c)
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition (compiling source file scene 1.c)
-C:\Users\drago\source\repos\cGame\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,1): message : see previous definition of 'APIENTRY' (compiling source file scene 1.c)
-C:\Users\drago\source\repos\cGame\cGame\math.h(59,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file entityAdder.c)
-C:\Users\drago\source\repos\cGame\cGame\entityAdder.c(15,1): warning C4005: 'Insert': macro redefinition
-C:\Users\drago\source\repos\cGame\cGame\EntityManager.h(64,1): message : see previous definition of 'Insert' (compiling source file entityAdder.c)
-C:\Users\drago\source\repos\cGame\cGame\entityAdder.c(26,12): warning C4098: 'InsertAtMainHead': 'void' function returning a value
-C:\Users\drago\source\repos\cGame\cGame\math.h(59,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file Player.c)
-C:\Users\drago\source\repos\cGame\cGame\math.h(59,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data (compiling source file scene 1.c)
-C:\Users\drago\source\repos\cGame\cGame\scene 1.c(123,2): warning C4047: 'function': 'uint *' differs in levels of indirection from 'uint **'
-C:\Users\drago\source\repos\cGame\cGame\scene 1.c(123,2): warning C4024: 'InitSingleTexture': different types for formal and actual parameter 4
-C:\Users\drago\source\repos\cGame\cGame\scene 1.c(187,40): warning C4018: '<': signed/unsigned mismatch
+  entityAdder.c
+  EntityManager.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'Debug.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'animations.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'collisions.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'Player.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'Mesh.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'math.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'scene%201.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'Physics.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'main.c')
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\includes\glfw-3.3.8\include\GLFW\glfw3.h(123,11):
+      see previous definition of 'APIENTRY'
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Debug.c(9,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'void *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c(15,24): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c(17,28): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c(22,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\files.c(23,18): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h(60,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'Mesh.c')
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(133,50): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(135,50): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(137,50): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(139,50): warning C4267: 'function': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(261,3): warning C4244: '=': conversion from 'uint' to 'float', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(261,3): warning C4244: '=': conversion from 'float' to 'uint', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(270,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(281,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(371,102): warning C4244: '+=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(19,54): warning C4267: '=': conversion from 'size_t' to 'ushort', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(372,29): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(52,20): warning C4013: 'stbi_failure_reason' undefined; assuming extern returning int
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(380,102): warning C4244: '+=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(52,20): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h(60,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'main.c')
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(381,29): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(52,20): warning C4024: 'ThrowError': different types for formal and actual parameter 1
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Mesh.c(396,7): warning C4047: 'initializing': 'char' differs in levels of indirection from 'void *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(73,24): warning C4267: '=': conversion from 'size_t' to 'ushort', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(107,20): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(107,20): warning C4024: 'ThrowError': different types for formal and actual parameter 1
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(121,81): warning C4028: formal parameter 4 different from declaration
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(128,14): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h(60,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'scene%201.c')
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(128,14): warning C4024: 'ThrowError': different types for formal and actual parameter 1
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(129,31): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(129,31): warning C4024: 'glBindTexture': different types for formal and actual parameter 2
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(135,53): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(135,53): warning C4024: '__glewBindTextureUnit': different types for formal and actual parameter 2
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(145,14): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(145,14): warning C4024: 'ThrowError': different types for formal and actual parameter 1
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(146,31): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c(100,13): warning C4267: '=': conversion from 'size_t' to 'USHORT', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(146,31): warning C4024: 'glBindTexture': different types for formal and actual parameter 2
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c(133,2): warning C4047: 'function': 'uint *' differs in levels of indirection from 'uint **'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c(87,22): warning C4267: 'initializing': conversion from 'size_t' to 'byte', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(152,53): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c(133,2): warning C4024: 'InitSingleTexture': different types for formal and actual parameter 4
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\animations.c(152,53): warning C4024: '__glewBindTextureUnit': different types for formal and actual parameter 2
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c(145,38): warning C4267: 'initializing': conversion from 'size_t' to 'char', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c(225,2): warning C4013: 'stbi_set_flip_vertically_on_load' undefined; assuming extern returning int
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c(226,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c(196,40): warning C4018: '<': signed/unsigned mismatch
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h(60,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'entityAdder.c')
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\scene 1.c(241,5): warning C4013: 'SetColliderAABB' undefined; assuming extern returning int
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\main.c(258,7): warning C4090: '=': different 'const' qualifiers
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c(10,9): warning C4005: 'Insert': macro redefinition
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.h(61,9):
+      see previous definition of 'Insert'
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h(60,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'EntityManager.c')
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\entityAdder.c(26,2): warning C4098: 'InsertAtMainHead': 'void' function returning a value
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h(60,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'Player.c')
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c(378,7): warning C4047: 'function': 'GLuint' differs in levels of indirection from 'uint *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c(378,7): warning C4024: 'glBindTexture': different types for formal and actual parameter 2
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Player.c(242,4): warning C4013: 'SetColliderAABB' undefined; assuming extern returning int
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\EntityManager.c(243,4): warning C4102: 'afterInc': unreferenced label
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h(60,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'math.c')
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c(60,33): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.c(60,56): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\math.h(60,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'Dictionary.c')
+  
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Dictionary.c(95,2): warning C4047: 'return': 'uint' differs in levels of indirection from 'void *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Dictionary.c(118,2): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Dictionary.c(115,2): warning C4102: 'cont': unreferenced label
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Dictionary.c(174,11): warning C4142: 'NugHash': benign redefinition of type
+      C:\Users\drago\OneDrive\Documents\GitHub\c-game\cGame\Dictionary.h(48,11):
+      see declaration of 'NugHash'
+  
+  entityAdder.h
 x64\Release\entityAdder.obj : warning LNK4042: object specified more than once; extras ignored
-  Generating code
-  2 of 283 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    9 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  cGame.vcxproj -> C:\Users\drago\source\repos\cGame\x64\Release\cGame.exe
+Player.obj : error LNK2001: unresolved external symbol DeleteEntity
+Player.obj : error LNK2001: unresolved external symbol SubscribeSlider
+Player.obj : error LNK2001: unresolved external symbol CreateCollider2
+Player.obj : error LNK2001: unresolved external symbol SubscribeEntity
+Player.obj : error LNK2001: unresolved external symbol DestroyCollider
+scene 1.obj : error LNK2001: unresolved external symbol SubscribeEntity_Without_Scale
+scene 1.obj : error LNK2001: unresolved external symbol DeleteSlider
+C:\Users\drago\OneDrive\Documents\GitHub\c-game\x64\Release\cGame.exe : fatal error LNK1120: 7 unresolved externals

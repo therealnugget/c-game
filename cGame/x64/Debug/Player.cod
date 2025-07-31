@@ -2193,7 +2193,7 @@ $LN113@PlayerUpda:
   00849	e9 f8 00 00 00	 jmp	 $LN18@PlayerUpda
 $LN17@PlayerUpda:
 
-; 281  : 		else if (idleTransImminent && (plrAnim->curAnimFrame != plrAnim->animFrameNo[idleTransition] - 1 || plrAnim->animating != idleTransition)) {//TODO: fix
+; 281  : 		else if (idleTransImminent && (plrAnim->curAnimFrame != plrAnim->animFrameNo[idleTransition] - 1 || plrAnim->animating != idleTransition)) {
 
   0084e	0f b6 05 00 00
 	00 00		 movzx	 eax, BYTE PTR idleTransImminent
