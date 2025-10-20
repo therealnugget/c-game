@@ -47,12 +47,12 @@ Vector2 oneVector = { 1.0f, 1.0f };
 const Vector2 origEnemyScale = { -0.7225f, 0.52865852f };
 const float healthBarYOffset = .23f;
 uint noOfEnemies = MAX_ENEMY_COUNT;
-static float enemyAccel = .3f;
+static float enemyAccel = 13.f;
 /*
 60: .31
 144: .4
 */
-static float enemySpeed = .04f;
+static float enemySpeed = .5f;
 /*
 60: .017
 144: .008
