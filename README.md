@@ -24,3 +24,4 @@ A few interesting features about this project:
 -  **Verlet integration was used for physics simulation**<br/>
 -  **The physics simulation will check if an entity in the scene has moved before it checks collisions, i.e. if no entities have moved since the last frame, physics will not be simulated in the current frame.**
 -  **An "earthquake" coefficient was added to the shader file to denote how much random noise should be added to each vertex, if the shader effect is needed.**
+- **I wrote the code myself**: I don't believe in AI. I believe in writing crappy code that is held together on duck tape and a dream, but it will run better than 100% of the AI vibe-coding matcha-drinking hippie-starbucks slop.
